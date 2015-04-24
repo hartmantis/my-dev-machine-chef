@@ -1,18 +1,18 @@
 ---
 driver:
-  name: vagrant
+  name: localhost
 
 provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-14.04
-  - name: ubuntu-12.04
-  - name: centos-6.5
-  - name: centos-5.11
+  - name: macosx
 
 suites:
   - name: default
     run_list:
       - recipe[my-dev-machine]
     attributes:
+      mac_app_store:
+        username: <%= ENV['APPLE_ID_USERNAME'] %>
+        password: <%= ENV['APPLE_ID_PASSWORD'] %>
