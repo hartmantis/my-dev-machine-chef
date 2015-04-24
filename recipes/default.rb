@@ -18,3 +18,6 @@
 # limitations under the License.
 #
 
+include_recipe 'mac-app-store'
+include_recipe 'microsoft-remote-desktop'
+include_recipe 'tweetbot'

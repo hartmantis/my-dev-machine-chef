@@ -10,31 +10,35 @@ My Dev Machine Cookbook
 [codeclimate]: https://codeclimate.com/github/RoboticCheese/my-dev-machine-chef
 [coveralls]: https://coveralls.io/r/RoboticCheese/my-dev-machine-chef
 
-TODO: Enter the cookbook description here.
+A Chef cookbook to do as much configuring of a clean dev box as possible.
 
 Requirements
 ============
 
-TODO: Describe cookbook dependencies.
+This cookbook consumes a whole mess of other ones. Check `metadata.rb` for
+details.
 
 Usage
 =====
 
-TODO: Describe how to use the cookbook.
+Set up the `node['mac_app_store']['username']` and
+`node['mac_app_store']['password']` attributes needed for the `mac-app-store`
+cookbook and add the default recipe to your run_list.
 
 Recipes
 =======
 
 ***default***
 
-TODO: Describe each component recipe.
+* Configures the Mac App Store
+* Installs a bunch of App Store apps
+    * Microsoft Remote Desktop
+    * Tweetbot
 
 Attributes
 ==========
 
 ***default***
-
-TODO: Describe any noteworthy attributes.
 
 Resources
 =========
