@@ -9,6 +9,7 @@ description      'Installs/Configures my-dev-machine'
 long_description 'Installs/Configures my-dev-machine'
 version          '0.0.1'
 
+depends          'chef-dk', '~> 3.0'
 depends          'mac-app-store', '~> 0.1'
 depends          'microsoft-remote-desktop', '~> 0.1'
 depends          'tweetbot', '~> 0.1'

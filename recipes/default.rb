@@ -18,6 +18,8 @@
 # limitations under the License.
 #
 
+include_recipe 'chef-dk'
+
 ##################
 # App Store Apps #
 ##################
