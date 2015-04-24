@@ -18,6 +18,79 @@ Requirements
 This cookbook consumes a whole mess of other ones. Check `metadata.rb` for
 details.
 
+To Do
+=====
+
+I use many apps that either need cookbooks or have cookbooks that need updates
+to work on OS X:
+
+* Skype
+* Box.net
+* Divvy
+* Fantastical 2
+* Evernote
+* Sparrow
+* MacVim
+* Vagrant
+* Atom
+* Audacity
+* CoconutBattery
+* Colloquy
+* Cyberduck
+* Dash
+* Epic Games Launcher (Unreal Engine)
+* FaxFresh
+* GarageBand
+* GIFBrewery
+* GIMP
+* GitHub (app)
+* Graphviz
+* Growl
+* Handbrake
+* iMovie
+* Induction (DB GUI)
+* Kindle
+* Kitematic
+* LibreOffice
+* MarkdownPro
+* MS Office
+* MusicBrainz Picard
+* Numbers
+* Netgear USB Control Center
+* OpenEmu
+* Pages
+* PandoraJam
+* Parallels
+* Paw
+* Plex Home Theater
+* Postgres.app
+* Rdio
+* Read Later
+* Reggy
+* Slack
+* Sococo
+* Spotify
+* Steam
+* Stickies
+* Textual
+* Unity
+* Vagrant Manager
+* Vessel (http://awvessel.github.io)
+* VLC
+* VMWare Fusion
+* WiFi Explorer
+
+Some apps do have cookbooks I just need to verify:
+
+* Alfred 2
+* 1Password
+* Chrome
+* Adium
+* Virtualbox
+* Docker (boot2docker)
+* Firefox
+* XCode
+
 Usage
 =====
 
