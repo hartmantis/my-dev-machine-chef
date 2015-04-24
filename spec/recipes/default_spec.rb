@@ -7,7 +7,7 @@ describe 'my-dev-machine::default' do
   let(:chef_run) { runner.converge(described_recipe) }
 
   %w(
-    chef-dk mac-app-store microsoft-remote-desktop tweetbot dropbox
+    chef-dk mac-app-store divvy microsoft-remote-desktop tweetbot dropbox
     private-internet-access webhook
   ).each do |r|
     it "includes #{r}" do

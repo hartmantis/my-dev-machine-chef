@@ -11,6 +11,7 @@ version          '0.0.1'
 
 depends          'chef-dk', '~> 3.0'
 depends          'mac-app-store', '~> 0.1'
+depends          'divvy', '~> 0.1'
 depends          'microsoft-remote-desktop', '~> 0.1'
 depends          'tweetbot', '~> 0.1'
 depends          'dropbox', '~> 0.1'

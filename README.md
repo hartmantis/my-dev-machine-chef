@@ -26,7 +26,6 @@ to work on OS X:
 
 * Skype
 * Box.net
-* Divvy
 * Fantastical 2
 * Evernote
 * Sparrow

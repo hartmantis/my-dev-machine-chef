@@ -24,6 +24,7 @@ include_recipe 'chef-dk'
 # App Store Apps #
 ##################
 include_recipe 'mac-app-store'
+include_recipe 'divvy'
 include_recipe 'microsoft-remote-desktop'
 include_recipe 'tweetbot'
 
