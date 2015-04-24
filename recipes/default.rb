@@ -18,6 +18,16 @@
 # limitations under the License.
 #
 
+##################
+# App Store Apps #
+##################
 include_recipe 'mac-app-store'
 include_recipe 'microsoft-remote-desktop'
 include_recipe 'tweetbot'
+
+##############
+# Other Apps #
+##############
+include_recipe 'dropbox'
+include_recipe 'private-internet-access'
+include_recipe 'webhook'
