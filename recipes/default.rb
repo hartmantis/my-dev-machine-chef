@@ -28,6 +28,7 @@ include_recipe 'iwork'
 include_recipe 'divvy'
 include_recipe 'microsoft-remote-desktop'
 include_recipe 'tweetbot'
+include_recipe 'fantastical'
 include_recipe 'kindle'
 
 ##############

@@ -7,8 +7,8 @@ describe 'my-dev-machine::default' do
   let(:chef_run) { runner.converge(described_recipe) }
 
   %w(
-    chef-dk mac-app-store iwork divvy microsoft-remote-desktop tweetbot kindle
-    dropbox private-internet-access webhook
+    chef-dk mac-app-store iwork divvy microsoft-remote-desktop tweetbot
+    fantastical kindle dropbox private-internet-access webhook
   ).each do |r|
     it "includes #{r}" do
       expect(chef_run).to include_recipe(r)
