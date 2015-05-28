@@ -19,6 +19,7 @@ depends          'fantastical', '~> 0.1'
 depends          'kindle', '~> 0.1'
 depends          'dropbox', '~> 0.1'
 depends          'private-internet-access', '~> 0.1'
+depends          'spotify', '~> 0.1'
 depends          'webhook', '~> 0.1'
 
 supports         'mac_os_x'

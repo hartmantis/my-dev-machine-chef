@@ -67,7 +67,6 @@ to work on OS X:
 * Reggy
 * Slack
 * Sococo
-* Spotify
 * Steam
 * Stickies
 * Textual
