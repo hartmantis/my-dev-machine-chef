@@ -36,5 +36,6 @@ include_recipe 'kindle'
 ##############
 include_recipe 'dropbox'
 include_recipe 'spotify'
+include_recipe 'steam'
 include_recipe 'private-internet-access'
 include_recipe 'webhook'
