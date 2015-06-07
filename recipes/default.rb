@@ -35,6 +35,7 @@ include_recipe 'kindle'
 # Other Apps #
 ##############
 include_recipe 'dropbox'
+include_recipe 'box-sync'
 include_recipe 'spotify'
 include_recipe 'steam'
 include_recipe 'private-internet-access'
