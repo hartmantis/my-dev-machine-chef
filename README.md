@@ -25,7 +25,6 @@ I use many apps that either need cookbooks or have cookbooks that need updates
 to work on OS X:
 
 * Skype
-* Box.net
 * Evernote
 * Sparrow
 * MacVim
@@ -47,7 +46,6 @@ to work on OS X:
 * Handbrake
 * iMovie
 * Induction (DB GUI)
-* Kindle
 * Kitematic
 * LibreOffice
 * MarkdownPro
@@ -67,7 +65,6 @@ to work on OS X:
 * Reggy
 * Slack
 * Sococo
-* Steam
 * Stickies
 * Textual
 * Unity
