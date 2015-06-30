@@ -36,6 +36,7 @@ include_recipe 'kindle'
 ##############
 include_recipe 'dropbox'
 include_recipe 'box-sync'
+include_recipe 'gimp'
 include_recipe 'spotify'
 include_recipe 'steam'
 include_recipe 'plex-home-theater'

@@ -39,7 +39,6 @@ to work on OS X:
 * FaxFresh
 * GarageBand
 * GIFBrewery
-* GIMP
 * GitHub (app)
 * Graphviz
 * Growl
