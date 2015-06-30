@@ -9,7 +9,7 @@ describe 'my-dev-machine::default' do
   %w(
     chef-dk mac-app-store iwork divvy microsoft-remote-desktop tweetbot
     fantastical kindle dropbox box-sync private-internet-access spotify steam
-    vlc webhook
+    plex-home-theater vlc webhook
   ).each do |r|
     it "includes #{r}" do
       expect(chef_run).to include_recipe(r)

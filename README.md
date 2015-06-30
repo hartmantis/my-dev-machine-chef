@@ -58,7 +58,6 @@ to work on OS X:
 * PandoraJam
 * Parallels
 * Paw
-* Plex Home Theater
 * Postgres.app
 * Rdio
 * Read Later
@@ -70,7 +69,6 @@ to work on OS X:
 * Unity
 * Vagrant Manager
 * Vessel (http://awvessel.github.io)
-* VLC
 * VMWare Fusion
 * WiFi Explorer
 
