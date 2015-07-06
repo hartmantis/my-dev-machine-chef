@@ -24,7 +24,6 @@ To Do
 I use many apps that either need cookbooks or have cookbooks that need updates
 to work on OS X:
 
-* Skype
 * Evernote
 * Sparrow
 * MacVim
