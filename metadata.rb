@@ -9,6 +9,7 @@ description      'Installs/Configures my-dev-machine'
 long_description 'Installs/Configures my-dev-machine'
 version          '0.0.1'
 
+depends          'max_os_x', '~> 1.4'
 depends          'chef-dk', '~> 3.0'
 depends          'mac-app-store', '~> 1.0'
 depends          'iwork', '~> 0.1'

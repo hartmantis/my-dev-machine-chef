@@ -18,6 +18,21 @@
 # limitations under the License.
 #
 
+execute 'killall Dock' do
+  action :nothing
+end
+
+%w(autohide magnification).each do |i|
+  mac_os_x_userdefaults "com.apple.dock #{i}" do
+    domain 'com.apple.dock'
+    key i
+    type 'boolean'
+    value 'true'
+    action :write
+    notifies :run, 'execute[killall Dock]'
+  end
+end
+
 include_recipe 'chef-dk'
 
 ##################
