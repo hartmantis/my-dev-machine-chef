@@ -6,6 +6,10 @@ describe 'my-dev-machine::default' do
   let(:runner) { ChefSpec::SoloRunner.new }
   let(:chef_run) { runner.converge(described_recipe) }
 
+  it 'creates an execute resource for restarting the Dock' do
+    expect(chef_run.execute('killall Dock')).to do_nothing
+  end
+
   it 'enables auto-hide for the Dock' do
     expect(chef_run).to write_mac_os_x_userdefaults('com.apple.dock autohide')
       .with(domain: 'com.apple.dock',
