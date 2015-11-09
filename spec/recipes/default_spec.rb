@@ -32,7 +32,7 @@ describe 'my-dev-machine::default' do
   end
 
   %w(
-    chef-dk mac-app-store iwork divvy microsoft-remote-desktop tweetbot
+    chef-dk mac-app-store knock iwork divvy microsoft-remote-desktop tweetbot
     fantastical kindle dropbox box-sync gimp private-internet-access spotify
     steam plex-home-theater skype-app vlc vmware-fusion webhook
   ).each do |r|
