@@ -45,3 +45,22 @@ chef-client -c ${TMP_DIR}/client.rb -j ${TMP_DIR}/dna.json || failure
 rm -rf $TMP_DIR
 
 exit 0
+
+
+
+
+
+
+chef-client -s, --server SERVER \
+  -k, --client-key KEY_FILE
+  -c, --config CONFIG,
+  -E, --environment ENVIRONMENT,
+  -j, --json-attributes JSON,
+  -N, --node-name NODE_NAME,
+
+
+FLAGS chef-client is missing:
+
+validation_client_name (does validation_key correspond at all?)
+
+
