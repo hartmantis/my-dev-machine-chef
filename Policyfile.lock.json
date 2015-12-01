@@ -1,5 +1,5 @@
 {
-  "revision_id": "64b61d4be779c12680300d0552c40097d924a17e673932fbf7e2210e498416a9",
+  "revision_id": "8b4798afdc4c308b8ea0dfe2cdd075c0eb531438f07a96cdc24e7c0bda7249a6",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,18 +7,18 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "6693393bf8b4f6554e70c07c66edab9b517045e9",
-      "dotted_decimal_identifier": "28872321653060854.24011619193087725.188683574593001",
+      "identifier": "e6bbc58cf1a8d1bcc61a4f10f5ee9927ea498d00",
+      "dotted_decimal_identifier": "64945701791049937.53135111919564270.168396713463040",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "e0ecce62f19f7b6c18f9531e53625f48e4380020",
+        "revision": "4b4d56336a66e948c004c3b4469463120cbfb7f9",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -92,14 +92,14 @@
       }
     },
     "microsoft-remote-desktop": {
-      "version": "1.0.0",
-      "identifier": "297ba8b4c5a07352c31360504ffe0020194a43a9",
-      "dotted_decimal_identifier": "11676438562709619.23295436077944830.137863250857",
-      "cache_key": "microsoft-remote-desktop-1.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/microsoft-remote-desktop/versions/1.0.0/download",
+      "version": "1.1.0",
+      "identifier": "e892911cedaac07e6c640ea598bb5591debcc216",
+      "dotted_decimal_identifier": "65463346550123200.35585024063805627.94084995531286",
+      "cache_key": "microsoft-remote-desktop-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/microsoft-remote-desktop/versions/1.1.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/microsoft-remote-desktop/versions/1.0.0/download",
-        "version": "1.0.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/microsoft-remote-desktop/versions/1.1.0/download",
+        "version": "1.1.0"
       }
     },
     "tweetbot": {
@@ -180,14 +180,14 @@
       }
     },
     "plex-home-theater": {
-      "version": "0.1.0",
-      "identifier": "910a397b6321b6167f50f27e991c0e53475013ad",
-      "dotted_decimal_identifier": "40825113622553014.6332435130128668.15750841504685",
-      "cache_key": "plex-home-theater-0.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/plex-home-theater/versions/0.1.0/download",
+      "version": "1.0.0",
+      "identifier": "4e9ab830a76e26a6533c18379084b5389cd22e52",
+      "dotted_decimal_identifier": "22125164064370214.46816363703406724.199254753816146",
+      "cache_key": "plex-home-theater-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/plex-home-theater/versions/1.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/plex-home-theater/versions/0.1.0/download",
-        "version": "0.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/plex-home-theater/versions/1.0.0/download",
+        "version": "1.0.0"
       }
     },
     "skype-app": {
@@ -268,14 +268,14 @@
       }
     },
     "windows": {
-      "version": "1.38.3",
-      "identifier": "e75a5c08861f19e27169ece8e57e13d41972edd0",
-      "dotted_decimal_identifier": "65120070946660121.63738044496799102.21801680956880",
-      "cache_key": "windows-1.38.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.3/download",
+      "version": "1.38.4",
+      "identifier": "beafe34c8bd8d6b2d8f5456adeb9bb47e62c426e",
+      "dotted_decimal_identifier": "53673636351695062.50341093797715641.205917478732398",
+      "cache_key": "windows-1.38.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.4/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.3/download",
-        "version": "1.38.3"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.4/download",
+        "version": "1.38.4"
       }
     },
     "apt": {
@@ -301,14 +301,14 @@
       }
     },
     "zypper": {
-      "version": "0.2.0",
-      "identifier": "7ebb75fefb077ff84ad07de00a165d246ed3abcd",
-      "dotted_decimal_identifier": "35671962528974719.69888053549730326.102411059571661",
-      "cache_key": "zypper-0.2.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.0/download",
+      "version": "0.2.1",
+      "identifier": "e233d1e253346a0193bf33706c16024c294631d2",
+      "dotted_decimal_identifier": "63670321274893418.443924387752982.2526133236178",
+      "cache_key": "zypper-0.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.0/download",
-        "version": "0.2.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.1/download",
+        "version": "0.2.1"
       }
     },
     "macosx_accessibility": {
@@ -367,14 +367,14 @@
       }
     },
     "yum-epel": {
-      "version": "0.6.4",
-      "identifier": "5e0c8a63f6f10331ede51b6dc859a644740d662a",
-      "dotted_decimal_identifier": "26472436332949763.14053842122295385.182812935022122",
-      "cache_key": "yum-epel-0.6.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.4/download",
+      "version": "0.6.5",
+      "identifier": "22765b0639c3a9be21981f84952c636f2d27587c",
+      "dotted_decimal_identifier": "9700282526712745.53517182822552876.109329150072956",
+      "cache_key": "yum-epel-0.6.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.4/download",
-        "version": "0.6.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+        "version": "0.6.5"
       }
     },
     "ark": {
@@ -471,7 +471,7 @@
       ],
       [
         "microsoft-remote-desktop",
-        "= 1.0.0"
+        "= 1.1.0"
       ],
       [
         "tweetbot",
@@ -503,7 +503,7 @@
       ],
       [
         "plex-home-theater",
-        "= 0.1.0"
+        "= 1.0.0"
       ],
       [
         "skype-app",
@@ -535,7 +535,7 @@
       ],
       [
         "windows",
-        "= 1.38.3"
+        "= 1.38.4"
       ],
       [
         "apt",
@@ -547,7 +547,7 @@
       ],
       [
         "zypper",
-        "= 0.2.0"
+        "= 0.2.1"
       ],
       [
         "macosx_accessibility",
@@ -571,7 +571,7 @@
       ],
       [
         "yum-epel",
-        "= 0.6.4"
+        "= 0.6.5"
       ],
       [
         "ark",
@@ -595,6 +595,92 @@
       ]
     ],
     "dependencies": {
+      "my-dev-machine (0.0.1)": [
+        [
+          "mac_os_x",
+          "~> 1.4"
+        ],
+        [
+          "chef-dk",
+          "~> 3.0"
+        ],
+        [
+          "mac-app-store",
+          "~> 1.0"
+        ],
+        [
+          "knock",
+          "~> 0.1"
+        ],
+        [
+          "iwork",
+          "~> 0.1"
+        ],
+        [
+          "divvy",
+          "~> 0.2"
+        ],
+        [
+          "microsoft-remote-desktop",
+          "~> 1.0"
+        ],
+        [
+          "tweetbot",
+          "~> 1.0"
+        ],
+        [
+          "fantastical",
+          "~> 0.1"
+        ],
+        [
+          "gimp",
+          "~> 0.1"
+        ],
+        [
+          "kindle",
+          "~> 0.1"
+        ],
+        [
+          "dropbox",
+          "~> 0.1"
+        ],
+        [
+          "box-sync",
+          "~> 0.1"
+        ],
+        [
+          "private-internet-access",
+          "~> 0.1"
+        ],
+        [
+          "plex-home-theater",
+          "~> 1.0"
+        ],
+        [
+          "skype-app",
+          "~> 0.1"
+        ],
+        [
+          "spotify",
+          "~> 0.1"
+        ],
+        [
+          "steam",
+          "~> 0.1"
+        ],
+        [
+          "vlc",
+          "~> 0.1"
+        ],
+        [
+          "vmware-fusion",
+          "~> 0.1"
+        ],
+        [
+          "webhook",
+          "~> 0.1"
+        ]
+      ],
       "mac_os_x (1.4.6)": [
 
       ],
@@ -641,7 +727,7 @@
           "~> 1.36"
         ]
       ],
-      "microsoft-remote-desktop (1.0.0)": [
+      "microsoft-remote-desktop (1.1.0)": [
         [
           "mac-app-store",
           "~> 1.0"
@@ -725,7 +811,7 @@
           "~> 1.36"
         ]
       ],
-      "plex-home-theater (0.1.0)": [
+      "plex-home-theater (1.0.0)": [
         [
           "windows",
           "~> 1.37"
@@ -814,7 +900,7 @@
       "dmg (2.3.0)": [
 
       ],
-      "windows (1.38.3)": [
+      "windows (1.38.4)": [
         [
           "chef_handler",
           ">= 0.0.0"
@@ -826,7 +912,7 @@
       "freebsd (0.4.0)": [
 
       ],
-      "zypper (0.2.0)": [
+      "zypper (0.2.1)": [
 
       ],
       "macosx_accessibility (1.0.1)": [
@@ -866,7 +952,7 @@
           "~> 2.2"
         ]
       ],
-      "yum-epel (0.6.4)": [
+      "yum-epel (0.6.5)": [
         [
           "yum",
           "~> 3.2"
@@ -899,92 +985,6 @@
       ],
       "chef_handler (1.2.0)": [
 
-      ],
-      "my-dev-machine (0.0.1)": [
-        [
-          "mac_os_x",
-          "~> 1.4"
-        ],
-        [
-          "chef-dk",
-          "~> 3.0"
-        ],
-        [
-          "mac-app-store",
-          "~> 1.0"
-        ],
-        [
-          "knock",
-          "~> 0.1"
-        ],
-        [
-          "iwork",
-          "~> 0.1"
-        ],
-        [
-          "divvy",
-          "~> 0.2"
-        ],
-        [
-          "microsoft-remote-desktop",
-          "~> 1.0"
-        ],
-        [
-          "tweetbot",
-          "~> 1.0"
-        ],
-        [
-          "fantastical",
-          "~> 0.1"
-        ],
-        [
-          "gimp",
-          "~> 0.1"
-        ],
-        [
-          "kindle",
-          "~> 0.1"
-        ],
-        [
-          "dropbox",
-          "~> 0.1"
-        ],
-        [
-          "box-sync",
-          "~> 0.1"
-        ],
-        [
-          "private-internet-access",
-          "~> 0.1"
-        ],
-        [
-          "plex-home-theater",
-          "~> 0.1"
-        ],
-        [
-          "skype-app",
-          "~> 0.1"
-        ],
-        [
-          "spotify",
-          "~> 0.1"
-        ],
-        [
-          "steam",
-          "~> 0.1"
-        ],
-        [
-          "vlc",
-          "~> 0.1"
-        ],
-        [
-          "vmware-fusion",
-          "~> 0.1"
-        ],
-        [
-          "webhook",
-          "~> 0.1"
-        ]
       ]
     }
   }
