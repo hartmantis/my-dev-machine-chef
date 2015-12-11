@@ -1,5 +1,5 @@
 {
-  "revision_id": "8b4798afdc4c308b8ea0dfe2cdd075c0eb531438f07a96cdc24e7c0bda7249a6",
+  "revision_id": "fb3f6f5b35b36c51e25d914fe06630a04ef5d6dbd29716ed61d6a3f6a7edd023",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "e6bbc58cf1a8d1bcc61a4f10f5ee9927ea498d00",
-      "dotted_decimal_identifier": "64945701791049937.53135111919564270.168396713463040",
+      "identifier": "6d0639a8ef0bd7533b42e3c0716a5c1325d46c03",
+      "dotted_decimal_identifier": "30687617178602455.23427581541904746.101237308812291",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "4b4d56336a66e948c004c3b4469463120cbfb7f9",
+        "revision": "4c2677a0b23c8c651407c5a2cfa893d0b0dff5bb",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -323,14 +323,14 @@
       }
     },
     "nodejs": {
-      "version": "2.4.2",
-      "identifier": "ac6fd338040f437520ed099db75881f6c8e92712",
-      "dotted_decimal_identifier": "48536648962805571.32968774715815768.142896932661010",
-      "cache_key": "nodejs-2.4.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.2/download",
+      "version": "2.4.4",
+      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
+      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
+      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.2/download",
-        "version": "2.4.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+        "version": "2.4.4"
       }
     },
     "build-essential": {
@@ -389,14 +389,14 @@
       }
     },
     "homebrew": {
-      "version": "1.13.0",
-      "identifier": "221e711344381aaab53bf964665e51e6621464f8",
-      "dotted_decimal_identifier": "9603620211537946.48050015232616030.90049929831672",
-      "cache_key": "homebrew-1.13.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/1.13.0/download",
+      "version": "2.0.3",
+      "identifier": "f23f665f69e820b2df16fc80913b74d0511cad6d",
+      "dotted_decimal_identifier": "68186653283969056.50347835673055547.128438062853485",
+      "cache_key": "homebrew-2.0.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.3/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/1.13.0/download",
-        "version": "1.13.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.3/download",
+        "version": "2.0.3"
       }
     },
     "yum": {
@@ -555,7 +555,7 @@
       ],
       [
         "nodejs",
-        "= 2.4.2"
+        "= 2.4.4"
       ],
       [
         "build-essential",
@@ -579,7 +579,7 @@
       ],
       [
         "homebrew",
-        "= 1.13.0"
+        "= 2.0.3"
       ],
       [
         "yum",
@@ -918,7 +918,7 @@
       "macosx_accessibility (1.0.1)": [
 
       ],
-      "nodejs (2.4.2)": [
+      "nodejs (2.4.4)": [
         [
           "yum-epel",
           ">= 0.0.0"
@@ -968,7 +968,7 @@
           ">= 0.0.0"
         ]
       ],
-      "homebrew (1.13.0)": [
+      "homebrew (2.0.3)": [
         [
           "build-essential",
           ">= 2.1.2"
