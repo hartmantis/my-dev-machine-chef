@@ -28,7 +28,7 @@ end
     key i
     type 'boolean'
     value 'true'
-    action :write
+    user Etc.getlogin
     notifies :run, 'execute[killall Dock]'
   end
 end
