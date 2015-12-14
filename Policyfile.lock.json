@@ -1,5 +1,5 @@
 {
-  "revision_id": "fb3f6f5b35b36c51e25d914fe06630a04ef5d6dbd29716ed61d6a3f6a7edd023",
+  "revision_id": "b04e0318cb56a4cf8bc07f8de0d8d61b536b77963d48be4c06daa509e3f9ebde",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "6d0639a8ef0bd7533b42e3c0716a5c1325d46c03",
-      "dotted_decimal_identifier": "30687617178602455.23427581541904746.101237308812291",
+      "identifier": "fb4d0378591cbb0694cc254d9835179adf278464",
+      "dotted_decimal_identifier": "70734896453721275.1852454380345397.25953936311396",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "4c2677a0b23c8c651407c5a2cfa893d0b0dff5bb",
+        "revision": "e62e2d5b23621cc2b4ba25c73fd20157e257acd3",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -213,14 +213,14 @@
       }
     },
     "steam": {
-      "version": "0.1.0",
-      "identifier": "e31062b5aa61b2a324fbb6b363e853448b2138f0",
-      "dotted_decimal_identifier": "63912835854000562.45921084724437992.91553857091824",
-      "cache_key": "steam-0.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/steam/versions/0.1.0/download",
+      "version": "1.0.0",
+      "identifier": "f50069bc1f47839c0c9c8882a6ef71683726ce59",
+      "dotted_decimal_identifier": "68961823421843331.43923962811557615.124692415827545",
+      "cache_key": "steam-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/steam/versions/1.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/steam/versions/0.1.0/download",
-        "version": "0.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/steam/versions/1.0.0/download",
+        "version": "1.0.0"
       }
     },
     "vlc": {
@@ -289,15 +289,26 @@
         "version": "2.9.2"
       }
     },
-    "freebsd": {
-      "version": "0.4.0",
-      "identifier": "6c8920db976855c4fc45ec698e865aa95b0d4581",
-      "dotted_decimal_identifier": "30550071700842581.55446472684572294.99683423569281",
-      "cache_key": "freebsd-0.4.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.4.0/download",
+    "macosx_accessibility": {
+      "version": "1.0.1",
+      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
+      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
+      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.4.0/download",
-        "version": "0.4.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
+        "version": "1.0.1"
+      }
+    },
+    "freebsd": {
+      "version": "0.5.0",
+      "identifier": "e33a7abcc8b35b4971af83a3e93c7cadea55c679",
+      "dotted_decimal_identifier": "63959118541009755.20672671941650748.137086402676345",
+      "cache_key": "freebsd-0.5.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.5.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.5.0/download",
+        "version": "0.5.0"
       }
     },
     "zypper": {
@@ -309,17 +320,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.1/download",
         "version": "0.2.1"
-      }
-    },
-    "macosx_accessibility": {
-      "version": "1.0.1",
-      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
-      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
-      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-        "version": "1.0.1"
       }
     },
     "nodejs": {
@@ -515,7 +515,7 @@
       ],
       [
         "steam",
-        "= 0.1.0"
+        "= 1.0.0"
       ],
       [
         "vlc",
@@ -542,16 +542,16 @@
         "= 2.9.2"
       ],
       [
+        "macosx_accessibility",
+        "= 1.0.1"
+      ],
+      [
         "freebsd",
-        "= 0.4.0"
+        "= 0.5.0"
       ],
       [
         "zypper",
         "= 0.2.1"
-      ],
-      [
-        "macosx_accessibility",
-        "= 1.0.1"
       ],
       [
         "nodejs",
@@ -666,7 +666,7 @@
         ],
         [
           "steam",
-          "~> 0.1"
+          "~> 1.0"
         ],
         [
           "vlc",
@@ -845,7 +845,7 @@
           "~> 2.7"
         ]
       ],
-      "steam (0.1.0)": [
+      "steam (1.0.0)": [
         [
           "dmg",
           "~> 2.2"
@@ -909,13 +909,13 @@
       "apt (2.9.2)": [
 
       ],
-      "freebsd (0.4.0)": [
+      "macosx_accessibility (1.0.1)": [
+
+      ],
+      "freebsd (0.5.0)": [
 
       ],
       "zypper (0.2.1)": [
-
-      ],
-      "macosx_accessibility (1.0.1)": [
 
       ],
       "nodejs (2.4.4)": [
