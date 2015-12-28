@@ -1,5 +1,5 @@
 {
-  "revision_id": "b04e0318cb56a4cf8bc07f8de0d8d61b536b77963d48be4c06daa509e3f9ebde",
+  "revision_id": "a666596243b63198b85c4bc60d8dbdba975eed2927e9db73451965a8c4ceb49e",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "fb4d0378591cbb0694cc254d9835179adf278464",
-      "dotted_decimal_identifier": "70734896453721275.1852454380345397.25953936311396",
+      "identifier": "d6f11491be8db07fa975c2d50381f6fefec934b4",
+      "dotted_decimal_identifier": "60500715662904752.35933645287261057.271575056725172",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "e62e2d5b23621cc2b4ba25c73fd20157e257acd3",
+        "revision": "d13cb4bd893021a605b5b3fdeadddb416fb7d537",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -268,14 +268,14 @@
       }
     },
     "windows": {
-      "version": "1.38.4",
-      "identifier": "beafe34c8bd8d6b2d8f5456adeb9bb47e62c426e",
-      "dotted_decimal_identifier": "53673636351695062.50341093797715641.205917478732398",
-      "cache_key": "windows-1.38.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.4/download",
+      "version": "1.39.0",
+      "identifier": "1ee7d1d3eaa2f1be885ea07e29e35f472171e9cf",
+      "dotted_decimal_identifier": "8699137690870513.53630185575950819.104759108430287",
+      "cache_key": "windows-1.39.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.38.4/download",
-        "version": "1.38.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.0/download",
+        "version": "1.39.0"
       }
     },
     "apt": {
@@ -535,7 +535,7 @@
       ],
       [
         "windows",
-        "= 1.38.4"
+        "= 1.39.0"
       ],
       [
         "apt",
@@ -900,7 +900,7 @@
       "dmg (2.3.0)": [
 
       ],
-      "windows (1.38.4)": [
+      "windows (1.39.0)": [
         [
           "chef_handler",
           ">= 0.0.0"
