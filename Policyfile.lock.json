@@ -1,5 +1,5 @@
 {
-  "revision_id": "a666596243b63198b85c4bc60d8dbdba975eed2927e9db73451965a8c4ceb49e",
+  "revision_id": "3c126bca010be7085ba87e4bbf5cb7c91c7570756dd0e1ec8af7327e65606596",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "d6f11491be8db07fa975c2d50381f6fefec934b4",
-      "dotted_decimal_identifier": "60500715662904752.35933645287261057.271575056725172",
+      "identifier": "8a6f0aca394765571e32e24906248174b79f83f0",
+      "dotted_decimal_identifier": "38965638919178085.24521526867461668.142338296873968",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "d13cb4bd893021a605b5b3fdeadddb416fb7d537",
+        "revision": "0dad28358c2200298aa087f503241dd0d201a891",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -245,6 +245,17 @@
         "version": "0.2.0"
       }
     },
+    "parallels": {
+      "version": "0.1.0",
+      "identifier": "86fb73b30c66a74f86b40abd9225abf30d644f40",
+      "dotted_decimal_identifier": "37994121222973095.22384630992572965.189060390080320",
+      "cache_key": "parallels-0.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/parallels/versions/0.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/parallels/versions/0.1.0/download",
+        "version": "0.1.0"
+      }
+    },
     "webhook": {
       "version": "0.2.0",
       "identifier": "1b7fe2459e5a0388ee084262d74d48feb7d70d0b",
@@ -289,17 +300,6 @@
         "version": "2.9.2"
       }
     },
-    "macosx_accessibility": {
-      "version": "1.0.1",
-      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
-      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
-      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-        "version": "1.0.1"
-      }
-    },
     "freebsd": {
       "version": "0.5.0",
       "identifier": "e33a7abcc8b35b4971af83a3e93c7cadea55c679",
@@ -320,6 +320,17 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.1/download",
         "version": "0.2.1"
+      }
+    },
+    "macosx_accessibility": {
+      "version": "1.0.1",
+      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
+      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
+      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
+        "version": "1.0.1"
       }
     },
     "nodejs": {
@@ -526,6 +537,10 @@
         "= 0.2.0"
       ],
       [
+        "parallels",
+        "= 0.1.0"
+      ],
+      [
         "webhook",
         "= 0.2.0"
       ],
@@ -542,16 +557,16 @@
         "= 2.9.2"
       ],
       [
-        "macosx_accessibility",
-        "= 1.0.1"
-      ],
-      [
         "freebsd",
         "= 0.5.0"
       ],
       [
         "zypper",
         "= 0.2.1"
+      ],
+      [
+        "macosx_accessibility",
+        "= 1.0.1"
       ],
       [
         "nodejs",
@@ -674,6 +689,10 @@
         ],
         [
           "vmware-fusion",
+          "~> 0.1"
+        ],
+        [
+          "parallels",
           "~> 0.1"
         ],
         [
@@ -883,6 +902,12 @@
           "~> 2.2"
         ]
       ],
+      "parallels (0.1.0)": [
+        [
+          "dmg",
+          "~> 2.3"
+        ]
+      ],
       "webhook (0.2.0)": [
         [
           "dmg",
@@ -909,13 +934,13 @@
       "apt (2.9.2)": [
 
       ],
-      "macosx_accessibility (1.0.1)": [
-
-      ],
       "freebsd (0.5.0)": [
 
       ],
       "zypper (0.2.1)": [
+
+      ],
+      "macosx_accessibility (1.0.1)": [
 
       ],
       "nodejs (2.4.4)": [

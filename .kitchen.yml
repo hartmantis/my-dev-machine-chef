@@ -1,12 +1,16 @@
 ---
 driver:
-  name: localhost
+  name: vagrant
 
 provisioner:
   name: chef_zero
 
 platforms:
-  - name: macosx
+  - name: macosx-10.10
+    driver:
+      box: roboticcheese/macosx-10.10
+      ssh:
+        insert_key: false
 
 suites:
   - name: default

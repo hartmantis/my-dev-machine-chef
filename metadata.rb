@@ -29,6 +29,7 @@ depends          'spotify', '~> 0.1'
 depends          'steam', '~> 1.0'
 depends          'vlc', '~> 0.1'
 depends          'vmware-fusion', '~> 0.1'
+depends          'parallels', '~> 0.1'
 depends          'webhook', '~> 0.1'
 
 supports         'mac_os_x'
