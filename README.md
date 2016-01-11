@@ -54,7 +54,6 @@ to work on OS X:
 * OpenEmu
 * Pages
 * PandoraJam
-* Parallels
 * Paw
 * Postgres.app
 * Rdio
@@ -67,7 +66,6 @@ to work on OS X:
 * Unity
 * Vagrant Manager
 * Vessel (http://awvessel.github.io)
-* VMWare Fusion
 * WiFi Explorer
 
 Some apps do have cookbooks I just need to verify:
