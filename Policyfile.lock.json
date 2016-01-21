@@ -1,5 +1,5 @@
 {
-  "revision_id": "3c126bca010be7085ba87e4bbf5cb7c91c7570756dd0e1ec8af7327e65606596",
+  "revision_id": "2109dc1a3e62346ede16c461aff5c035a790c5cfdb92794dda148db5c55a7003",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "8a6f0aca394765571e32e24906248174b79f83f0",
-      "dotted_decimal_identifier": "38965638919178085.24521526867461668.142338296873968",
+      "identifier": "6a7a028dcb33931cb3d5d6d00900138b5c668af7",
+      "dotted_decimal_identifier": "29970498918757267.8079030361262336.21489271606007",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "0dad28358c2200298aa087f503241dd0d201a891",
+        "revision": "ef2190567ee00beba788dfb5ce65d187d8e597c1",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -279,14 +279,14 @@
       }
     },
     "windows": {
-      "version": "1.39.0",
-      "identifier": "1ee7d1d3eaa2f1be885ea07e29e35f472171e9cf",
-      "dotted_decimal_identifier": "8699137690870513.53630185575950819.104759108430287",
-      "cache_key": "windows-1.39.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.0/download",
+      "version": "1.39.1",
+      "identifier": "0e98019b84499c168f6990c485c03a3dde825ec4",
+      "dotted_decimal_identifier": "4107782345476508.6350133050770880.64037400501956",
+      "cache_key": "windows-1.39.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.0/download",
-        "version": "1.39.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
+        "version": "1.39.1"
       }
     },
     "apt": {
@@ -301,14 +301,14 @@
       }
     },
     "freebsd": {
-      "version": "0.5.0",
-      "identifier": "e33a7abcc8b35b4971af83a3e93c7cadea55c679",
-      "dotted_decimal_identifier": "63959118541009755.20672671941650748.137086402676345",
-      "cache_key": "freebsd-0.5.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.5.0/download",
+      "version": "0.5.1",
+      "identifier": "a90f79e680c193ff84754fb8debc39dfe8473a42",
+      "dotted_decimal_identifier": "47586287296758163.71921758444773052.63633837472322",
+      "cache_key": "freebsd-0.5.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.5.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.5.0/download",
-        "version": "0.5.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/freebsd/versions/0.5.1/download",
+        "version": "0.5.1"
       }
     },
     "zypper": {
@@ -400,25 +400,25 @@
       }
     },
     "homebrew": {
-      "version": "2.0.3",
-      "identifier": "f23f665f69e820b2df16fc80913b74d0511cad6d",
-      "dotted_decimal_identifier": "68186653283969056.50347835673055547.128438062853485",
-      "cache_key": "homebrew-2.0.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.3/download",
+      "version": "2.0.4",
+      "identifier": "3aec92e2d1fbe9151c4a7c1fd46e30baebc75e7a",
+      "dotted_decimal_identifier": "16585664264010729.5942080746542190.53579377761914",
+      "cache_key": "homebrew-2.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.4/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.3/download",
-        "version": "2.0.3"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.4/download",
+        "version": "2.0.4"
       }
     },
     "yum": {
-      "version": "3.8.2",
-      "identifier": "0019632f8d8ade4a7e8b746ea581db731250a6b0",
-      "dotted_decimal_identifier": "27913790261982.20968285695550849.241287274997424",
-      "cache_key": "yum-3.8.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.8.2/download",
+      "version": "3.9.0",
+      "identifier": "7f22c92fefc24600c10bed22e9d417cf905c915f",
+      "dotted_decimal_identifier": "35785569530266182.212256967289300.26180247654751",
+      "cache_key": "yum-3.9.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.9.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.8.2/download",
-        "version": "3.8.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.9.0/download",
+        "version": "3.9.0"
       }
     },
     "7-zip": {
@@ -550,7 +550,7 @@
       ],
       [
         "windows",
-        "= 1.39.0"
+        "= 1.39.1"
       ],
       [
         "apt",
@@ -558,7 +558,7 @@
       ],
       [
         "freebsd",
-        "= 0.5.0"
+        "= 0.5.1"
       ],
       [
         "zypper",
@@ -594,11 +594,11 @@
       ],
       [
         "homebrew",
-        "= 2.0.3"
+        "= 2.0.4"
       ],
       [
         "yum",
-        "= 3.8.2"
+        "= 3.9.0"
       ],
       [
         "7-zip",
@@ -925,7 +925,7 @@
       "dmg (2.3.0)": [
 
       ],
-      "windows (1.39.0)": [
+      "windows (1.39.1)": [
         [
           "chef_handler",
           ">= 0.0.0"
@@ -934,7 +934,7 @@
       "apt (2.9.2)": [
 
       ],
-      "freebsd (0.5.0)": [
+      "freebsd (0.5.1)": [
 
       ],
       "zypper (0.2.1)": [
@@ -993,13 +993,13 @@
           ">= 0.0.0"
         ]
       ],
-      "homebrew (2.0.3)": [
+      "homebrew (2.0.4)": [
         [
           "build-essential",
           ">= 2.1.2"
         ]
       ],
-      "yum (3.8.2)": [
+      "yum (3.9.0)": [
 
       ],
       "7-zip (1.0.2)": [

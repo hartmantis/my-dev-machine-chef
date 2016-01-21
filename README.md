@@ -56,7 +56,6 @@ to work on OS X:
 * PandoraJam
 * Paw
 * Postgres.app
-* Rdio
 * Read Later
 * Reggy
 * Slack
