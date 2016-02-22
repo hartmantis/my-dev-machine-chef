@@ -1,5 +1,5 @@
 {
-  "revision_id": "d6ec6c315c176c0e84238a911e330599569e9d9c7271928a8ed83b6189993edc",
+  "revision_id": "8d91b2171db3ea02de8df5d6826a154b60338b25046a5f6c747becf9349c4bbf",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "5523bc11eae92381e4f4f9700f90dd46bbb9f637",
-      "dotted_decimal_identifier": "23964663681837347.36562012803698576.243295866975799",
+      "identifier": "520566d2e7dff0d34a2683ce043b46dac9aef03d",
+      "dotted_decimal_identifier": "23086887273488368.59472749366477883.77905500500029",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "42ffb5bea95701ef7320d41fbd24fe2819c0852f",
+        "revision": "6ec09eb76172a8c1d56a9be47c097eede5215931",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -81,14 +81,14 @@
       }
     },
     "divvy": {
-      "version": "0.2.0",
-      "identifier": "8079c7015d19df7e99e7431459f99707540f9396",
-      "dotted_decimal_identifier": "36162692647295455.35635065607444985.166057730872214",
-      "cache_key": "divvy-0.2.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/divvy/versions/0.2.0/download",
+      "version": "0.2.1",
+      "identifier": "f5a34c66077fd43be592be71ff30b43961462e55",
+      "dotted_decimal_identifier": "69140917818720212.16859442049056560.198158538124885",
+      "cache_key": "divvy-0.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/divvy/versions/0.2.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/divvy/versions/0.2.0/download",
-        "version": "0.2.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/divvy/versions/0.2.1/download",
+        "version": "0.2.1"
       }
     },
     "microsoft-remote-desktop": {
@@ -322,15 +322,37 @@
         "version": "2.9.2"
       }
     },
-    "macosx_accessibility": {
-      "version": "1.0.1",
-      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
-      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
-      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
+    "xquartz": {
+      "version": "1.1.1",
+      "identifier": "61c4eab75f703f9e792a1b0b07d7612449f32821",
+      "dotted_decimal_identifier": "27519585118810175.44606268069578711.106808487389217",
+      "cache_key": "xquartz-1.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/xquartz/versions/1.1.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-        "version": "1.0.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/xquartz/versions/1.1.1/download",
+        "version": "1.1.1"
+      }
+    },
+    "yum-epel": {
+      "version": "0.6.5",
+      "identifier": "22765b0639c3a9be21981f84952c636f2d27587c",
+      "dotted_decimal_identifier": "9700282526712745.53517182822552876.109329150072956",
+      "cache_key": "yum-epel-0.6.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+        "version": "0.6.5"
+      }
+    },
+    "nodejs": {
+      "version": "2.4.4",
+      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
+      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
+      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+        "version": "2.4.4"
       }
     },
     "freebsd": {
@@ -355,37 +377,15 @@
         "version": "0.2.1"
       }
     },
-    "nodejs": {
-      "version": "2.4.4",
-      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
-      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
-      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+    "privacy_services_manager": {
+      "version": "1.1.0",
+      "identifier": "b78d702b3fc94913ecb523d919960257bcc01c95",
+      "dotted_decimal_identifier": "51665433639504201.5608287292168598.2575852117141",
+      "cache_key": "privacy_services_manager-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
-        "version": "2.4.4"
-      }
-    },
-    "xquartz": {
-      "version": "1.1.1",
-      "identifier": "61c4eab75f703f9e792a1b0b07d7612449f32821",
-      "dotted_decimal_identifier": "27519585118810175.44606268069578711.106808487389217",
-      "cache_key": "xquartz-1.1.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/xquartz/versions/1.1.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/xquartz/versions/1.1.1/download",
-        "version": "1.1.1"
-      }
-    },
-    "yum-epel": {
-      "version": "0.6.5",
-      "identifier": "22765b0639c3a9be21981f84952c636f2d27587c",
-      "dotted_decimal_identifier": "9700282526712745.53517182822552876.109329150072956",
-      "cache_key": "yum-epel-0.6.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
-        "version": "0.6.5"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
+        "version": "1.1.0"
       }
     },
     "build-essential": {
@@ -408,17 +408,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/now/versions/0.3.2/download",
         "version": "0.3.2"
-      }
-    },
-    "privacy_services_manager": {
-      "version": "1.1.0",
-      "identifier": "b78d702b3fc94913ecb523d919960257bcc01c95",
-      "dotted_decimal_identifier": "51665433639504201.5608287292168598.2575852117141",
-      "cache_key": "privacy_services_manager-1.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
-        "version": "1.1.0"
       }
     },
     "homebrew": {
@@ -455,14 +444,14 @@
       }
     },
     "seven_zip": {
-      "version": "1.0.4",
-      "identifier": "7efa01387aa527855d416caedab877d78b023e7f",
-      "dotted_decimal_identifier": "35740730215015719.37538707480173240.131767633854079",
-      "cache_key": "seven_zip-1.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/1.0.4/download",
+      "version": "2.0.0",
+      "identifier": "8e6bde2b1a92690253e9c55d717870376718cf59",
+      "dotted_decimal_identifier": "40088048642986601.655213457142136.123383255191385",
+      "cache_key": "seven_zip-2.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/1.0.4/download",
-        "version": "1.0.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.0/download",
+        "version": "2.0.0"
       }
     },
     "7-zip": {
@@ -524,7 +513,7 @@
       ],
       [
         "divvy",
-        "= 0.2.0"
+        "= 0.2.1"
       ],
       [
         "microsoft-remote-desktop",
@@ -611,8 +600,16 @@
         "= 2.9.2"
       ],
       [
-        "macosx_accessibility",
-        "= 1.0.1"
+        "xquartz",
+        "= 1.1.1"
+      ],
+      [
+        "yum-epel",
+        "= 0.6.5"
+      ],
+      [
+        "nodejs",
+        "= 2.4.4"
       ],
       [
         "freebsd",
@@ -623,16 +620,8 @@
         "= 0.2.1"
       ],
       [
-        "nodejs",
-        "= 2.4.4"
-      ],
-      [
-        "xquartz",
-        "= 1.1.1"
-      ],
-      [
-        "yum-epel",
-        "= 0.6.5"
+        "privacy_services_manager",
+        "= 1.1.0"
       ],
       [
         "build-essential",
@@ -641,10 +630,6 @@
       [
         "now",
         "= 0.3.2"
-      ],
-      [
-        "privacy_services_manager",
-        "= 1.1.0"
       ],
       [
         "homebrew",
@@ -660,7 +645,7 @@
       ],
       [
         "seven_zip",
-        "= 1.0.4"
+        "= 2.0.0"
       ],
       [
         "7-zip",
@@ -802,13 +787,13 @@
           "~> 1.0"
         ]
       ],
-      "divvy (0.2.0)": [
+      "divvy (0.2.1)": [
         [
           "mac-app-store",
           "~> 1.0"
         ],
         [
-          "macosx_accessibility",
+          "privacy_services_manager",
           "~> 1.0"
         ],
         [
@@ -1036,14 +1021,17 @@
       "apt (2.9.2)": [
 
       ],
-      "macosx_accessibility (1.0.1)": [
-
+      "xquartz (1.1.1)": [
+        [
+          "dmg",
+          ">= 1.1.0"
+        ]
       ],
-      "freebsd (0.5.1)": [
-
-      ],
-      "zypper (0.2.1)": [
-
+      "yum-epel (0.6.5)": [
+        [
+          "yum",
+          "~> 3.2"
+        ]
       ],
       "nodejs (2.4.4)": [
         [
@@ -1067,16 +1055,16 @@
           ">= 0.0.0"
         ]
       ],
-      "xquartz (1.1.1)": [
+      "freebsd (0.5.1)": [
+
+      ],
+      "zypper (0.2.1)": [
+
+      ],
+      "privacy_services_manager (1.1.0)": [
         [
           "dmg",
-          ">= 1.1.0"
-        ]
-      ],
-      "yum-epel (0.6.5)": [
-        [
-          "yum",
-          "~> 3.2"
+          "~> 2.2"
         ]
       ],
       "build-essential (2.3.1)": [
@@ -1087,12 +1075,6 @@
       ],
       "now (0.3.2)": [
 
-      ],
-      "privacy_services_manager (1.1.0)": [
-        [
-          "dmg",
-          "~> 2.2"
-        ]
       ],
       "homebrew (2.0.5)": [
         [
@@ -1117,7 +1099,7 @@
           ">= 0.0.0"
         ]
       ],
-      "seven_zip (1.0.4)": [
+      "seven_zip (2.0.0)": [
         [
           "windows",
           ">= 1.2.2"
