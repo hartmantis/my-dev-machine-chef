@@ -1,5 +1,5 @@
 {
-  "revision_id": "689df1df7aa69d0677f3fa51521ca9f3fd13f0da17671b5776dc00d29b22d67f",
+  "revision_id": "a7db1d5811576efdb9737c3a9b286e73dd2f68778d26997cae172e1f4523c247",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "b9ae6ccfe5bc5304b4f7889704a4f215d2043201",
-      "dotted_decimal_identifier": "52264653059112019.1324875148362916.266175531725313",
+      "identifier": "59d4a92682c9c8e87072c04bf33e48ca5e27c82e",
+      "dotted_decimal_identifier": "25285095887915464.65425832751657790.80034000259118",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "181bde7886b063c35e51410e4a022f44cc454c92",
+        "revision": "051df689163413da1c93f2e22157e7853c88f40e",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -125,14 +125,14 @@
       }
     },
     "gimp": {
-      "version": "1.0.0",
-      "identifier": "7e37f23c46e798b40db2f206800e69ce4121a844",
-      "dotted_decimal_identifier": "35527360598435736.50680558023770126.116334576904260",
-      "cache_key": "gimp-1.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/1.0.0/download",
+      "version": "1.0.1",
+      "identifier": "5ef324df6767856b68b44ab93c65453faf3fb1b3",
+      "dotted_decimal_identifier": "26725987503269765.30232946065095781.76139825443251",
+      "cache_key": "gimp-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/1.0.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/1.0.0/download",
-        "version": "1.0.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/1.0.1/download",
+        "version": "1.0.1"
       }
     },
     "iterm2": {
@@ -322,6 +322,17 @@
         "version": "2.9.2"
       }
     },
+    "nodejs": {
+      "version": "2.4.4",
+      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
+      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
+      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+        "version": "2.4.4"
+      }
+    },
     "xquartz": {
       "version": "1.1.1",
       "identifier": "61c4eab75f703f9e792a1b0b07d7612449f32821",
@@ -344,15 +355,15 @@
         "version": "0.6.5"
       }
     },
-    "nodejs": {
-      "version": "2.4.4",
-      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
-      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
-      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+    "privacy_services_manager": {
+      "version": "1.1.0",
+      "identifier": "b78d702b3fc94913ecb523d919960257bcc01c95",
+      "dotted_decimal_identifier": "51665433639504201.5608287292168598.2575852117141",
+      "cache_key": "privacy_services_manager-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
-        "version": "2.4.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
+        "version": "1.1.0"
       }
     },
     "freebsd": {
@@ -375,17 +386,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.1/download",
         "version": "0.2.1"
-      }
-    },
-    "privacy_services_manager": {
-      "version": "1.1.0",
-      "identifier": "b78d702b3fc94913ecb523d919960257bcc01c95",
-      "dotted_decimal_identifier": "51665433639504201.5608287292168598.2575852117141",
-      "cache_key": "privacy_services_manager-1.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
-        "version": "1.1.0"
       }
     },
     "build-essential": {
@@ -529,7 +529,7 @@
       ],
       [
         "gimp",
-        "= 1.0.0"
+        "= 1.0.1"
       ],
       [
         "iterm2",
@@ -600,6 +600,10 @@
         "= 2.9.2"
       ],
       [
+        "nodejs",
+        "= 2.4.4"
+      ],
+      [
         "xquartz",
         "= 1.1.1"
       ],
@@ -608,8 +612,8 @@
         "= 0.6.5"
       ],
       [
-        "nodejs",
-        "= 2.4.4"
+        "privacy_services_manager",
+        "= 1.1.0"
       ],
       [
         "freebsd",
@@ -618,10 +622,6 @@
       [
         "zypper",
         "= 0.2.1"
-      ],
-      [
-        "privacy_services_manager",
-        "= 1.1.0"
       ],
       [
         "build-essential",
@@ -819,7 +819,7 @@
           "~> 1.0"
         ]
       ],
-      "gimp (1.0.0)": [
+      "gimp (1.0.1)": [
         [
           "dmg",
           "~> 2.2"
@@ -1021,18 +1021,6 @@
       "apt (2.9.2)": [
 
       ],
-      "xquartz (1.1.1)": [
-        [
-          "dmg",
-          ">= 1.1.0"
-        ]
-      ],
-      "yum-epel (0.6.5)": [
-        [
-          "yum",
-          "~> 3.2"
-        ]
-      ],
       "nodejs (2.4.4)": [
         [
           "yum-epel",
@@ -1055,17 +1043,29 @@
           ">= 0.0.0"
         ]
       ],
-      "freebsd (0.5.1)": [
-
+      "xquartz (1.1.1)": [
+        [
+          "dmg",
+          ">= 1.1.0"
+        ]
       ],
-      "zypper (0.2.1)": [
-
+      "yum-epel (0.6.5)": [
+        [
+          "yum",
+          "~> 3.2"
+        ]
       ],
       "privacy_services_manager (1.1.0)": [
         [
           "dmg",
           "~> 2.2"
         ]
+      ],
+      "freebsd (0.5.1)": [
+
+      ],
+      "zypper (0.2.1)": [
+
       ],
       "build-essential (2.3.1)": [
         [
