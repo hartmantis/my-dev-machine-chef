@@ -21,28 +21,6 @@ details.
 To Do
 =====
 
-* Don't download Chef-DK if it's already installed
-* Remove items from the dock
-    * Mail
-    * Contacts
-    * Maps
-    * iTunes
-    * iBooks
-    * App Store
-* Install Xcode dev tools _before_ installing the AXElements gem
-    * Even after `xcode-select --install` it still complains about IOKit missing
-* Set up symlinks for:
-    * .aws
-    * .bundle
-    * .chef
-    * .gitconfig
-    * .profile
-    * .ssh
-    * .vim
-    * .vimrc
-    * .vimrc.local
-* The 1Password Safari extension
-
 I use many apps that either need cookbooks or have cookbooks that need updates
 to work on OS X:
 
