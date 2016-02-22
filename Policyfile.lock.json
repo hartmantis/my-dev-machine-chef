@@ -1,5 +1,5 @@
 {
-  "revision_id": "8d91b2171db3ea02de8df5d6826a154b60338b25046a5f6c747becf9349c4bbf",
+  "revision_id": "e1f9edbb34653a75c201c18ec5a4d2a210a327eb20cf7ec8232d9371b2d93352",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "520566d2e7dff0d34a2683ce043b46dac9aef03d",
-      "dotted_decimal_identifier": "23086887273488368.59472749366477883.77905500500029",
+      "identifier": "5c80978a59e8631374f26027ccd62b2f2ecb70ad",
+      "dotted_decimal_identifier": "26037086206945379.5476608901631190.47481648541869",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "6ec09eb76172a8c1d56a9be47c097eede5215931",
+        "revision": "2b6acad9efa9a042ee89a3b080b043cd7c25faca",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -169,14 +169,14 @@
       }
     },
     "box-sync": {
-      "version": "0.1.0",
-      "identifier": "06f9f788ec0518f63f4b1dc6859c9da15cd96486",
-      "dotted_decimal_identifier": "1963691409671448.69312436125468060.173316373046406",
-      "cache_key": "box-sync-0.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/box-sync/versions/0.1.0/download",
+      "version": "1.0.0",
+      "identifier": "e652163589ce18657609093fe71b439e51bac4d5",
+      "dotted_decimal_identifier": "64829499984432664.28558753829742363.74347255088341",
+      "cache_key": "box-sync-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/box-sync/versions/1.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/box-sync/versions/0.1.0/download",
-        "version": "0.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/box-sync/versions/1.0.0/download",
+        "version": "1.0.0"
       }
     },
     "private-internet-access": {
@@ -545,7 +545,7 @@
       ],
       [
         "box-sync",
-        "= 0.1.0"
+        "= 1.0.0"
       ],
       [
         "private-internet-access",
@@ -712,7 +712,7 @@
         ],
         [
           "box-sync",
-          "~> 0.1"
+          "~> 1.0"
         ],
         [
           "private-internet-access",
@@ -875,7 +875,7 @@
           "~> 1.36"
         ]
       ],
-      "box-sync (0.1.0)": [
+      "box-sync (1.0.0)": [
         [
           "dmg",
           "~> 2.2"
