@@ -1,5 +1,5 @@
 {
-  "revision_id": "8018edf0da128de4fa3d70749c72862357129ad0345aea7103ac3c52c6d8b082",
+  "revision_id": "78a266bca9436d54f18b58979b14035febac70f4a3d09c9deeafe729c99e4870",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "683db36b2a0d85cb8edde21e7678621799c9b92e",
-      "dotted_decimal_identifier": "29341238384266629.57296503904827000.107853503904046",
+      "identifier": "f28eb27cf2d88ae1daa664aefdb936662caf123d",
+      "dotted_decimal_identifier": "68273841615591562.63572277948513721.59812464235069",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "e2a640d2cc97366d740f75060bb5d2cdc4ce0f16",
+        "revision": "05984bb2f5b932b94e074d4d032df56744048843",
         "working_tree_clean": true,
         "published": false,
         "synchronized_remote_branches": [
@@ -278,6 +278,17 @@
         "version": "0.2.0"
       }
     },
+    "x2go-client": {
+      "version": "0.2.0",
+      "identifier": "f8d3cd8f324a3541164b9f71ace3e12b845b9568",
+      "dotted_decimal_identifier": "70038674048436789.18320387539578083.247577020437864",
+      "cache_key": "x2go-client-0.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/x2go-client/versions/0.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/x2go-client/versions/0.2.0/download",
+        "version": "0.2.0"
+      }
+    },
     "dmg": {
       "version": "2.3.0",
       "identifier": "dc37a516c04cb700c71d60e7a16ae18c61c29ed7",
@@ -311,6 +322,17 @@
         "version": "2.9.2"
       }
     },
+    "macosx_accessibility": {
+      "version": "1.0.1",
+      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
+      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
+      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
+        "version": "1.0.1"
+      }
+    },
     "freebsd": {
       "version": "0.5.1",
       "identifier": "a90f79e680c193ff84754fb8debc39dfe8473a42",
@@ -333,17 +355,6 @@
         "version": "0.2.1"
       }
     },
-    "macosx_accessibility": {
-      "version": "1.0.1",
-      "identifier": "fd0800ea28c9793095b3c2fc483520b29799362e",
-      "dotted_decimal_identifier": "71221969129359737.13675398185109557.35951419668014",
-      "cache_key": "macosx_accessibility-1.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/macosx_accessibility/versions/1.0.1/download",
-        "version": "1.0.1"
-      }
-    },
     "nodejs": {
       "version": "2.4.4",
       "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
@@ -353,6 +364,28 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
         "version": "2.4.4"
+      }
+    },
+    "xquartz": {
+      "version": "1.1.1",
+      "identifier": "61c4eab75f703f9e792a1b0b07d7612449f32821",
+      "dotted_decimal_identifier": "27519585118810175.44606268069578711.106808487389217",
+      "cache_key": "xquartz-1.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/xquartz/versions/1.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/xquartz/versions/1.1.1/download",
+        "version": "1.1.1"
+      }
+    },
+    "yum-epel": {
+      "version": "0.6.5",
+      "identifier": "22765b0639c3a9be21981f84952c636f2d27587c",
+      "dotted_decimal_identifier": "9700282526712745.53517182822552876.109329150072956",
+      "cache_key": "yum-epel-0.6.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+        "version": "0.6.5"
       }
     },
     "build-essential": {
@@ -399,15 +432,15 @@
         "version": "2.0.5"
       }
     },
-    "yum-epel": {
-      "version": "0.6.5",
-      "identifier": "22765b0639c3a9be21981f84952c636f2d27587c",
-      "dotted_decimal_identifier": "9700282526712745.53517182822552876.109329150072956",
-      "cache_key": "yum-epel-0.6.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
+    "yum": {
+      "version": "3.10.0",
+      "identifier": "8129ef7e1e5fd5662b70520fff9cd740016fc68c",
+      "dotted_decimal_identifier": "36356380585517013.28758209037598620.236669901981324",
+      "cache_key": "yum-3.10.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.10.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
-        "version": "0.6.5"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.10.0/download",
+        "version": "3.10.0"
       }
     },
     "ark": {
@@ -419,17 +452,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/1.0.1/download",
         "version": "1.0.1"
-      }
-    },
-    "yum": {
-      "version": "3.10.0",
-      "identifier": "8129ef7e1e5fd5662b70520fff9cd740016fc68c",
-      "dotted_decimal_identifier": "36356380585517013.28758209037598620.236669901981324",
-      "cache_key": "yum-3.10.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.10.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.10.0/download",
-        "version": "3.10.0"
       }
     },
     "seven_zip": {
@@ -571,6 +593,10 @@
         "= 0.2.0"
       ],
       [
+        "x2go-client",
+        "= 0.2.0"
+      ],
+      [
         "dmg",
         "= 2.3.0"
       ],
@@ -583,6 +609,10 @@
         "= 2.9.2"
       ],
       [
+        "macosx_accessibility",
+        "= 1.0.1"
+      ],
+      [
         "freebsd",
         "= 0.5.1"
       ],
@@ -591,12 +621,16 @@
         "= 0.2.1"
       ],
       [
-        "macosx_accessibility",
-        "= 1.0.1"
-      ],
-      [
         "nodejs",
         "= 2.4.4"
+      ],
+      [
+        "xquartz",
+        "= 1.1.1"
+      ],
+      [
+        "yum-epel",
+        "= 0.6.5"
       ],
       [
         "build-essential",
@@ -615,16 +649,12 @@
         "= 2.0.5"
       ],
       [
-        "yum-epel",
-        "= 0.6.5"
+        "yum",
+        "= 3.10.0"
       ],
       [
         "ark",
         "= 1.0.1"
-      ],
-      [
-        "yum",
-        "= 3.10.0"
       ],
       [
         "seven_zip",
@@ -732,6 +762,10 @@
         [
           "webhook",
           "~> 0.1"
+        ],
+        [
+          "x2go-client",
+          "~> 0.2"
         ]
       ],
       "mac_os_x (1.4.6)": [
@@ -966,6 +1000,28 @@
           "~> 1.34"
         ]
       ],
+      "x2go-client (0.2.0)": [
+        [
+          "xquartz",
+          "~> 1.1"
+        ],
+        [
+          "dmg",
+          "~> 2.2"
+        ],
+        [
+          "windows",
+          "~> 1.38"
+        ],
+        [
+          "apt",
+          "~> 2.6"
+        ],
+        [
+          "yum-epel",
+          "~> 0.6"
+        ]
+      ],
       "dmg (2.3.0)": [
 
       ],
@@ -978,13 +1034,13 @@
       "apt (2.9.2)": [
 
       ],
+      "macosx_accessibility (1.0.1)": [
+
+      ],
       "freebsd (0.5.1)": [
 
       ],
       "zypper (0.2.1)": [
-
-      ],
-      "macosx_accessibility (1.0.1)": [
 
       ],
       "nodejs (2.4.4)": [
@@ -1009,6 +1065,18 @@
           ">= 0.0.0"
         ]
       ],
+      "xquartz (1.1.1)": [
+        [
+          "dmg",
+          ">= 1.1.0"
+        ]
+      ],
+      "yum-epel (0.6.5)": [
+        [
+          "yum",
+          "~> 3.2"
+        ]
+      ],
       "build-essential (2.3.1)": [
         [
           "7-zip",
@@ -1030,11 +1098,8 @@
           ">= 2.1.2"
         ]
       ],
-      "yum-epel (0.6.5)": [
-        [
-          "yum",
-          "~> 3.2"
-        ]
+      "yum (3.10.0)": [
+
       ],
       "ark (1.0.1)": [
         [
@@ -1049,9 +1114,6 @@
           "seven_zip",
           ">= 0.0.0"
         ]
-      ],
-      "yum (3.10.0)": [
-
       ],
       "seven_zip (1.0.4)": [
         [
