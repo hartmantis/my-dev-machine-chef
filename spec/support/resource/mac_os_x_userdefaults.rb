@@ -7,14 +7,13 @@ class Chef
     # A fake mac_os_x_userdefaults resource
     #
     # @author Jonathan Hartman <j@p4nt5.com>
-    class MacOsXUserdefaults < Resource::LWRPBase
-      self.resource_name = :mac_os_x_userdefaults
-      actions [:write]
+    class MacOsXUserdefaults < Resource
       default_action :write
-      attribute :domain, kind_of: String
-      attribute :key, kind_of: String
-      attribute :type, kind_of: String
-      attribute :value, kind_of: String
+      property :user, String
+      property :domain, String
+      property :key, String
+      property :type, String
+      property :value, String
     end
   end
 end
