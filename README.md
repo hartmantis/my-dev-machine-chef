@@ -21,6 +21,28 @@ details.
 To Do
 =====
 
+* Don't download Chef-DK if it's already installed
+* Remove items from the dock
+    * Mail
+    * Contacts
+    * Maps
+    * iTunes
+    * iBooks
+    * App Store
+* Install Xcode dev tools _before_ installing the AXElements gem
+    * Even after `xcode-select --install` it still complains about IOKit missing
+* Set up symlinks for:
+    * .aws
+    * .bundle
+    * .chef
+    * .gitconfig
+    * .profile
+    * .ssh
+    * .vim
+    * .vimrc
+    * .vimrc.local
+* The 1Password Safari extension
+
 I use many apps that either need cookbooks or have cookbooks that need updates
 to work on OS X:
 
@@ -83,6 +105,23 @@ Usage
 Set up the `node['mac_app_store']['username']` and
 `node['mac_app_store']['password']` attributes needed for the `mac-app-store`
 cookbook and add the default recipe to your run_list.
+
+* [Install OS X from a USB key](http://www.iclarified.com/35134/how-to-create-a-bootable-os-x-mavericks-usb-install-key)
+* Walk through the initial setup
+    * Apple ID
+    * Location services
+    * Wi-fi setup
+* Enable any auto-imported email/Facebook/Twitter accounts
+* Download and install the [Chef-DK](https://downloads.chef.io/chef-dk/)
+* Drop off the validator key in `/etc/chef/validation.pem`
+* Drop off a `/etc/chef/client.rb`:
+
+    chef_server_url 'https://api.chef.io/organizations/roboticcheese'
+    validation_client_name 'roboticcheese-validator'
+    validation_key '/etc/chef/roboticcheese-validator.pem'
+    use_policyfile true
+    policy_group 'dev'
+    policy_name 'dev-machine'
 
 Recipes
 =======
