@@ -1,5 +1,5 @@
 {
-  "revision_id": "e1f9edbb34653a75c201c18ec5a4d2a210a327eb20cf7ec8232d9371b2d93352",
+  "revision_id": "689df1df7aa69d0677f3fa51521ca9f3fd13f0da17671b5776dc00d29b22d67f",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "5c80978a59e8631374f26027ccd62b2f2ecb70ad",
-      "dotted_decimal_identifier": "26037086206945379.5476608901631190.47481648541869",
+      "identifier": "b9ae6ccfe5bc5304b4f7889704a4f215d2043201",
+      "dotted_decimal_identifier": "52264653059112019.1324875148362916.266175531725313",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "2b6acad9efa9a042ee89a3b080b043cd7c25faca",
+        "revision": "181bde7886b063c35e51410e4a022f44cc454c92",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -125,14 +125,14 @@
       }
     },
     "gimp": {
-      "version": "0.1.0",
-      "identifier": "709536e030a21e689ab326c4b43219ae85be2072",
-      "dotted_decimal_identifier": "31689260313649694.29443491818157106.28237358833778",
-      "cache_key": "gimp-0.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/0.1.0/download",
+      "version": "1.0.0",
+      "identifier": "7e37f23c46e798b40db2f206800e69ce4121a844",
+      "dotted_decimal_identifier": "35527360598435736.50680558023770126.116334576904260",
+      "cache_key": "gimp-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/1.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/0.1.0/download",
-        "version": "0.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/gimp/versions/1.0.0/download",
+        "version": "1.0.0"
       }
     },
     "iterm2": {
@@ -529,7 +529,7 @@
       ],
       [
         "gimp",
-        "= 0.1.0"
+        "= 1.0.0"
       ],
       [
         "iterm2",
@@ -696,7 +696,7 @@
         ],
         [
           "gimp",
-          "~> 0.1"
+          "~> 1.0"
         ],
         [
           "iterm2",
@@ -819,7 +819,7 @@
           "~> 1.0"
         ]
       ],
-      "gimp (0.1.0)": [
+      "gimp (1.0.0)": [
         [
           "dmg",
           "~> 2.2"
