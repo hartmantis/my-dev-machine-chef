@@ -1,6 +1,5 @@
 # Encoding: UTF-8
-#
-# rubocop:disable SingleSpaceBeforeFirstArg
+
 name             'my-dev-machine'
 maintainer       'Jonathan Hartman'
 maintainer_email 'j@p4nt5.com'
@@ -34,4 +33,3 @@ depends          'parallels', '~> 0.1'
 depends          'webhook', '~> 0.1'
 
 supports         'mac_os_x'
-# rubocop:enable SingleSpaceBeforeFirstArg
