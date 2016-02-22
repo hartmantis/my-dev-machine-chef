@@ -53,7 +53,6 @@ to work on OS X:
 * Netgear USB Control Center
 * OpenEmu
 * Pages
-* PandoraJam
 * Paw
 * Postgres.app
 * Read Later
