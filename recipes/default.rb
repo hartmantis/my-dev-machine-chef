@@ -44,6 +44,7 @@ end
 
 include_recipe 'chef-dk'
 include_recipe 'chef-client'
+include_recipe 'homebrew'
 
 ##################
 # App Store Apps #

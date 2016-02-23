@@ -1,5 +1,5 @@
 {
-  "revision_id": "4a0fff88335571f93fd0ffedcacce80a2bc8a1d0b91268ec5db094486f758885",
+  "revision_id": "1acd71294200dd38478cf6ce7a9b4fdda2ebdf7f2f08f4ff0598da69d3ba085c",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,18 +7,18 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "3251f8541a79e00ea44b409dcd8a4ac83e470fd7",
-      "dotted_decimal_identifier": "14163875840293344.4121292787535242.82223898759127",
+      "identifier": "a2b256768f84299ed4bcebb96035e357b19df233",
+      "dotted_decimal_identifier": "45795030653174825.44706954194018357.249965781578291",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "6300c871d1f838f8c5837f2b09961554a2c19028",
+        "revision": "4d1e575dd439cfb8541843777bd2db68adc151ee",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -56,6 +56,17 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-dk/versions/3.1.0/download",
         "version": "3.1.0"
+      }
+    },
+    "homebrew": {
+      "version": "2.0.5",
+      "identifier": "4b7f5401bae6e48b209291a5abdda9ac804cb779",
+      "dotted_decimal_identifier": "21250622036305636.39160835643648989.186558351980409",
+      "cache_key": "homebrew-2.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.5/download",
+        "version": "2.0.5"
       }
     },
     "mac-app-store": {
@@ -333,17 +344,6 @@
         "version": "2.9.2"
       }
     },
-    "nodejs": {
-      "version": "2.4.4",
-      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
-      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
-      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
-        "version": "2.4.4"
-      }
-    },
     "xquartz": {
       "version": "1.1.1",
       "identifier": "61c4eab75f703f9e792a1b0b07d7612449f32821",
@@ -364,6 +364,17 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/0.6.5/download",
         "version": "0.6.5"
+      }
+    },
+    "nodejs": {
+      "version": "2.4.4",
+      "identifier": "b687af505227296bb830eaf9b18e9da42f33eda1",
+      "dotted_decimal_identifier": "51377632797927209.30320342748213646.173328492129697",
+      "cache_key": "nodejs-2.4.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nodejs/versions/2.4.4/download",
+        "version": "2.4.4"
       }
     },
     "freebsd": {
@@ -419,17 +430,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/now/versions/0.3.2/download",
         "version": "0.3.2"
-      }
-    },
-    "homebrew": {
-      "version": "2.0.5",
-      "identifier": "4b7f5401bae6e48b209291a5abdda9ac804cb779",
-      "dotted_decimal_identifier": "21250622036305636.39160835643648989.186558351980409",
-      "cache_key": "homebrew-2.0.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/2.0.5/download",
-        "version": "2.0.5"
       }
     },
     "yum": {
@@ -537,6 +537,10 @@
         "= 3.1.0"
       ],
       [
+        "homebrew",
+        "= 2.0.5"
+      ],
+      [
         "mac-app-store",
         "= 1.1.0"
       ],
@@ -637,16 +641,16 @@
         "= 2.9.2"
       ],
       [
-        "nodejs",
-        "= 2.4.4"
-      ],
-      [
         "xquartz",
         "= 1.1.1"
       ],
       [
         "yum-epel",
         "= 0.6.5"
+      ],
+      [
+        "nodejs",
+        "= 2.4.4"
       ],
       [
         "freebsd",
@@ -667,10 +671,6 @@
       [
         "now",
         "= 0.3.2"
-      ],
-      [
-        "homebrew",
-        "= 2.0.5"
       ],
       [
         "yum",
@@ -723,6 +723,12 @@
         [
           "dmg",
           "~> 2.2"
+        ]
+      ],
+      "homebrew (2.0.5)": [
+        [
+          "build-essential",
+          ">= 2.1.2"
         ]
       ],
       "mac-app-store (1.1.0)": [
@@ -982,6 +988,18 @@
       "apt (2.9.2)": [
 
       ],
+      "xquartz (1.1.1)": [
+        [
+          "dmg",
+          ">= 1.1.0"
+        ]
+      ],
+      "yum-epel (0.6.5)": [
+        [
+          "yum",
+          "~> 3.2"
+        ]
+      ],
       "nodejs (2.4.4)": [
         [
           "yum-epel",
@@ -1004,18 +1022,6 @@
           ">= 0.0.0"
         ]
       ],
-      "xquartz (1.1.1)": [
-        [
-          "dmg",
-          ">= 1.1.0"
-        ]
-      ],
-      "yum-epel (0.6.5)": [
-        [
-          "yum",
-          "~> 3.2"
-        ]
-      ],
       "freebsd (0.5.1)": [
 
       ],
@@ -1036,12 +1042,6 @@
       ],
       "now (0.3.2)": [
 
-      ],
-      "homebrew (2.0.5)": [
-        [
-          "build-essential",
-          ">= 2.1.2"
-        ]
       ],
       "yum (3.10.0)": [
 
@@ -1093,6 +1093,10 @@
         [
           "chef-dk",
           "~> 3.0"
+        ],
+        [
+          "homebrew",
+          "~> 2.0"
         ],
         [
           "mac-app-store",
