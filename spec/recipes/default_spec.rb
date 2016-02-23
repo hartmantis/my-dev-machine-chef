@@ -73,4 +73,8 @@ describe 'my-dev-machine::default' do
       expect(chef_run).to include_recipe(r)
     end
   end
+
+  it 'installs Ruby via Homebrew' do
+    expect(chef_run).to install_homebrew_package('ruby')
+  end
 end

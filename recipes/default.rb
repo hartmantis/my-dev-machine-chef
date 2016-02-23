@@ -46,6 +46,11 @@ include_recipe 'chef-dk'
 include_recipe 'chef-client'
 include_recipe 'homebrew'
 
+#################
+# Homebrew Apps #
+#################
+homebrew_package 'ruby'
+
 ##################
 # App Store Apps #
 ##################
