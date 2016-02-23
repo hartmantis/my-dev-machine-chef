@@ -31,6 +31,17 @@ describe 'my-dev-machine::default' do
       .to notify('execute[killall Dock]').to(:run)
   end
 
+  it 'enables battery percentage display' do
+    exp = 'com.apple.menuextra.battery ShowPercent'
+    expect(chef_run).to write_mac_os_x_userdefaults(exp)
+      .with(domain: 'com.apple.menuextra.battery',
+            key: 'ShowPercent',
+            type: 'string',
+            value: 'YES')
+    expect(chef_run.mac_os_x_userdefaults(exp))
+      .to notify('execute[killall Dock]').to(:run)
+  end
+
   %w(
     chef-dk chef-client mac-app-store knock iwork divvy microsoft-remote-desktop
     tweetbot fantastical kindle dropbox box-sync gimp iterm2

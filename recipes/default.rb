@@ -33,6 +33,15 @@ end
   end
 end
 
+mac_os_x_userdefaults 'com.apple.menuextra.battery ShowPercent' do
+  domain 'com.apple.menuextra.battery'
+  key 'ShowPercent'
+  type 'string'
+  value 'YES'
+  user Etc.getlogin
+  notifies :run, 'execute[killall Dock]'
+end
+
 include_recipe 'chef-dk'
 include_recipe 'chef-client'
 
