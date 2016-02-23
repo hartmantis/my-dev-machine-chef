@@ -8,6 +8,7 @@ description      'Installs/Configures my-dev-machine'
 long_description 'Installs/Configures my-dev-machine'
 version          '0.0.1'
 
+depends          'chef-client', '~> 4.3'
 depends          'mac_os_x', '~> 1.4'
 depends          'chef-dk', '~> 3.0'
 depends          'mac-app-store', '~> 1.0'
