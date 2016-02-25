@@ -1,5 +1,5 @@
 {
-  "revision_id": "a999891ea9bb21459d3e8c479ba009412f60182c455fb73fc1a1ca9c6a70f7ce",
+  "revision_id": "4ca6eb85f354d2bb43d3390900c55c190a18dc675781e6611006304cb1a12180",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,18 +7,18 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "32d806b10311134ea146ff03a9ed58385ee01d6e",
-      "dotted_decimal_identifier": "14311272086704403.22132374481644013.96999133158766",
+      "identifier": "230fd220caabdbb66e7b515188ca2ae72a709984",
+      "dotted_decimal_identifier": "9869019352574939.51349921685670090.47172337834372",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "aab4865d1be64f19f48637b69d07129a8326d059",
+        "revision": "a382e742ca6c4def082ffdb2815b0096dd5cc808",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/master"
+
         ]
       },
       "source_options": {
@@ -70,14 +70,14 @@
       }
     },
     "mac-app-store": {
-      "version": "1.1.0",
-      "identifier": "57edc6f4115872e2506f167c87902aad0f45fd9f",
-      "dotted_decimal_identifier": "24749761727912050.63701782785460112.46922773953951",
-      "cache_key": "mac-app-store-1.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/1.1.0/download",
+      "version": "1.1.1",
+      "identifier": "5f62a6830402545e4cea9144eb711eafb37bf507",
+      "dotted_decimal_identifier": "26848590089683540.26543218154072945.33739979355399",
+      "cache_key": "mac-app-store-1.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/1.1.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/1.1.0/download",
-        "version": "1.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/1.1.1/download",
+        "version": "1.1.1"
       }
     },
     "knock": {
@@ -377,6 +377,17 @@
         "version": "2.4.4"
       }
     },
+    "privacy_services_manager": {
+      "version": "1.1.0",
+      "identifier": "b78d702b3fc94913ecb523d919960257bcc01c95",
+      "dotted_decimal_identifier": "51665433639504201.5608287292168598.2575852117141",
+      "cache_key": "privacy_services_manager-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
+        "version": "1.1.0"
+      }
+    },
     "freebsd": {
       "version": "0.5.1",
       "identifier": "a90f79e680c193ff84754fb8debc39dfe8473a42",
@@ -397,17 +408,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/zypper/versions/0.2.1/download",
         "version": "0.2.1"
-      }
-    },
-    "privacy_services_manager": {
-      "version": "1.1.0",
-      "identifier": "b78d702b3fc94913ecb523d919960257bcc01c95",
-      "dotted_decimal_identifier": "51665433639504201.5608287292168598.2575852117141",
-      "cache_key": "privacy_services_manager-1.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/privacy_services_manager/versions/1.1.0/download",
-        "version": "1.1.0"
       }
     },
     "build-essential": {
@@ -542,7 +542,7 @@
       ],
       [
         "mac-app-store",
-        "= 1.1.0"
+        "= 1.1.1"
       ],
       [
         "knock",
@@ -653,16 +653,16 @@
         "= 2.4.4"
       ],
       [
+        "privacy_services_manager",
+        "= 1.1.0"
+      ],
+      [
         "freebsd",
         "= 0.5.1"
       ],
       [
         "zypper",
         "= 0.2.1"
-      ],
-      [
-        "privacy_services_manager",
-        "= 1.1.0"
       ],
       [
         "build-essential",
@@ -731,7 +731,7 @@
           ">= 2.1.2"
         ]
       ],
-      "mac-app-store (1.1.0)": [
+      "mac-app-store (1.1.1)": [
         [
           "build-essential",
           "~> 2.1"
@@ -1022,17 +1022,17 @@
           ">= 0.0.0"
         ]
       ],
-      "freebsd (0.5.1)": [
-
-      ],
-      "zypper (0.2.1)": [
-
-      ],
       "privacy_services_manager (1.1.0)": [
         [
           "dmg",
           "~> 2.2"
         ]
+      ],
+      "freebsd (0.5.1)": [
+
+      ],
+      "zypper (0.2.1)": [
+
       ],
       "build-essential (2.3.1)": [
         [
