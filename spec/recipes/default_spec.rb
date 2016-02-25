@@ -45,6 +45,8 @@ describe 'my-dev-machine::default' do
   %w(
     chef-dk
     chef-client
+    chef-client::config
+    chef-client::delete_validation
     homebrew
     mac-app-store
     knock
