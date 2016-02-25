@@ -35,6 +35,29 @@ describe 'my-dev-machine::default' do
       .to notify('execute[killall Dock]').to(:run)
   end
 
+  it 'includes the screensaver recipe' do
+    expect(chef_run).to include_recipe('mac_os_x::screensaver')
+  end
+
+  it 'enables the bottom-left hot corner' do
+    d = 'com.apple.dock bl-hot-corner'
+    expect(chef_run).to write_mac_os_x_userdefaults(d)
+      .with(domain: 'com.apple.dock',
+            key: 'wvous-bl-corner',
+            type: 'int',
+            value: 5)
+    expect(chef_run.mac_os_x_userdefaults(d))
+      .to notify('execute[killall Dock]').to(:run)
+    d = 'com.apple.dock bl-modifier'
+    expect(chef_run).to write_mac_os_x_userdefaults(d)
+      .with(domain: 'com.apple.dock',
+            key: 'wvous-bl-modifier',
+            type: 'int',
+            value: 0)
+    expect(chef_run.mac_os_x_userdefaults(d))
+      .to notify('execute[killall Dock]').to(:run)
+  end
+
   it 'enables battery percentage display' do
     exp = 'com.apple.menuextra.battery ShowPercent'
     expect(chef_run).to write_mac_os_x_userdefaults(exp)

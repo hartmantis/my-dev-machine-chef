@@ -13,7 +13,7 @@ class Chef
       property :domain, String
       property :key, String
       property :type, String
-      property :value, String
+      property :value, [String, Fixnum]
     end
   end
 end

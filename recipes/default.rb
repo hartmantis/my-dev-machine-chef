@@ -37,6 +37,26 @@ end
   end
 end
 
+include_recipe 'mac_os_x::screensaver'
+
+mac_os_x_userdefaults 'com.apple.dock bl-hot-corner' do
+  domain 'com.apple.dock'
+  key 'wvous-bl-corner'
+  type 'int'
+  value 5
+  user Etc.getlogin
+  notifies :run, 'execute[killall Dock]'
+end
+
+mac_os_x_userdefaults 'com.apple.dock bl-modifier' do
+  domain 'com.apple.dock'
+  key 'wvous-bl-modifier'
+  type 'int'
+  value 0
+  user Etc.getlogin
+  notifies :run, 'execute[killall Dock]'
+end
+
 mac_os_x_userdefaults 'com.apple.menuextra.battery ShowPercent' do
   domain 'com.apple.menuextra.battery'
   key 'ShowPercent'
