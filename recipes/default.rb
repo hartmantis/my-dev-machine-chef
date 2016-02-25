@@ -22,6 +22,10 @@ execute 'killall Dock' do
   action :nothing
 end
 
+execute 'killall SystemUIServer' do
+  action :nothing
+end
+
 %w(autohide magnification).each do |i|
   mac_os_x_userdefaults "com.apple.dock #{i}" do
     domain 'com.apple.dock'
@@ -39,7 +43,7 @@ mac_os_x_userdefaults 'com.apple.menuextra.battery ShowPercent' do
   type 'string'
   value 'YES'
   user Etc.getlogin
-  notifies :run, 'execute[killall Dock]'
+  notifies :run, 'execute[killall SystemUIServer]'
 end
 
 include_recipe 'chef-dk'

@@ -10,6 +10,10 @@ describe 'my-dev-machine::default' do
     expect(chef_run.execute('killall Dock')).to do_nothing
   end
 
+  it 'creates an execute resource for restarting the SystemUIServer' do
+    expect(chef_run.execute('killall SystemUIServer')).to do_nothing
+  end
+
   it 'enables auto-hide for the Dock' do
     expect(chef_run).to write_mac_os_x_userdefaults('com.apple.dock autohide')
       .with(domain: 'com.apple.dock',
@@ -39,7 +43,7 @@ describe 'my-dev-machine::default' do
             type: 'string',
             value: 'YES')
     expect(chef_run.mac_os_x_userdefaults(exp))
-      .to notify('execute[killall Dock]').to(:run)
+      .to notify('execute[killall SystemUIServer]').to(:run)
   end
 
   %w(
