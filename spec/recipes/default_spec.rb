@@ -6,6 +6,86 @@ describe 'my-dev-machine::default' do
   let(:runner) { ChefSpec::SoloRunner.new }
   let(:chef_run) { runner.converge(described_recipe) }
 
+  %w(.bundle .chef .ssh .vim).each do |d|
+    context "#{d} is a directory" do
+      before(:each) do
+        allow(File).to receive(:directory?).and_call_original
+        allow(File).to receive(:directory?).with(File.expand_path("~/#{d}"))
+          .and_return(true)
+      end
+
+      it "deletes the #{d} directory" do
+        expect(chef_run).to delete_directory(File.expand_path("~/#{d}"))
+          .with(recursive: true)
+      end
+    end
+
+    context "#{d} is not a directory" do
+      before(:each) do
+        allow(File).to receive(:directory?).and_call_original
+        allow(File).to receive(:directory?).with(File.expand_path("~/#{d}"))
+          .and_return(false)
+      end
+
+      it "does not delete the #{d} directory" do
+        expect(chef_run).to_not delete_directory(File.expand_path("~/#{d}"))
+      end
+    end
+  end
+
+  %w(.profile .gitconfig .vimrc .vimrc.local).each do |f|
+    context "#{f} does not exist" do
+      before(:each) do
+        allow(File).to receive(:exist?).and_call_original
+        allow(File).to receive(:exist?).with(File.expand_path("~/#{f}"))
+          .and_return(false)
+      end
+
+      it "does not delete the #{f} file" do
+        expect(chef_run).to_not delete_file(File.expand_path("~/#{f}"))
+      end
+    end
+
+    context "#{f} is not a symlink" do
+      before(:each) do
+        allow(File).to receive(:exist?).and_call_original
+        allow(File).to receive(:exist?).with(File.expand_path("~/#{f}"))
+          .and_return(true)
+        allow(File).to receive(:ftype).and_call_original
+        allow(File).to receive(:ftype).with(File.expand_path("~/#{f}"))
+          .and_return('file')
+      end
+
+      it "deletes the #{f} file" do
+        expect(chef_run).to delete_file(File.expand_path("~/#{f}"))
+      end
+    end
+
+    context "#{f} is a symlink" do
+      before(:each) do
+        allow(File).to receive(:exist?).and_call_original
+        allow(File).to receive(:exist?).with(File.expand_path("~/#{f}"))
+          .and_return(true)
+        allow(File).to receive(:ftype).and_call_original
+        allow(File).to receive(:ftype).with(File.expand_path("~/#{f}"))
+          .and_return('link')
+      end
+
+      it "does not delete the #{f} file" do
+        expect(chef_run).to_not delete_file(File.expand_path("~/#{f}"))
+      end
+    end
+  end
+
+  %w(
+    .bundle .chef .ssh .vim .profile .gitconfig .vimrc .vimrc.local
+  ).each do |l|
+    it "creates a symlink for #{l}" do
+      expect(chef_run).to create_link(File.expand_path("~/#{l}"))
+        .with(to: File.expand_path("~/Dropbox/#{l}"))
+    end
+  end
+
   it 'creates an execute resource for restarting the Dock' do
     expect(chef_run.execute('killall Dock')).to do_nothing
   end
