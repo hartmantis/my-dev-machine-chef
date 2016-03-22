@@ -18,6 +18,13 @@
 # limitations under the License.
 #
 
+chef_gem 'accessibility_core' do
+  clear_sources true
+  source 'https://github.com/RoboticCheese/accessibility_core/releases/' \
+         'download/v0.6.3/accessibility_core-0.6.3.gem'
+  compile_time true
+end
+
 %w(.bundle .chef .ssh .vim).each do |d|
   directory File.expand_path("~/#{d}") do
     action :delete

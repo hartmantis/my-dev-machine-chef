@@ -6,6 +6,13 @@ describe 'my-dev-machine::default' do
   let(:runner) { ChefSpec::SoloRunner.new }
   let(:chef_run) { runner.converge(described_recipe) }
 
+  it 'installs the forked copy of accessibility_core' do
+    s = 'https://github.com/RoboticCheese/accessibility_core/releases/' \
+        'download/v0.6.3/accessibility_core-0.6.3.gem'
+    expect(chef_run).to install_chef_gem('accessibility_core')
+      .with(clear_sources: true, source: s, compile_time: true)
+  end
+
   %w(.bundle .chef .ssh .vim).each do |d|
     context "#{d} is a directory" do
       before(:each) do
