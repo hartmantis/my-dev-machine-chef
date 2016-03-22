@@ -186,4 +186,8 @@ describe 'my-dev-machine::default' do
   it 'installs Ruby via Homebrew' do
     expect(chef_run).to install_homebrew_package('ruby')
   end
+
+  it 'installs Tig via Homebrew' do
+    expect(chef_run).to install_homebrew_package('tig')
+  end
 end

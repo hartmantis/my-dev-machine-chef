@@ -1,5 +1,5 @@
 {
-  "revision_id": "13eb3c59ee3367464a09ad4bf7f615c953fde091690d8899385cbe453e76229d",
+  "revision_id": "2c4fc5817429b3619fc110a818031668b51a11e7ffaeb54519b839ebbedf06ff",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "61181983cca2046e5b8b5c3758bebed60c27b73f",
-      "dotted_decimal_identifier": "27329570605408772.31062901543884990.209826536208191",
+      "identifier": "28a21155e69de971756c1f2e2006dbfa2a7a372d",
+      "dotted_decimal_identifier": "11437194407747049.31935779608338438.241867500959533",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "ec25bd1877b802b1ff5caf7f92ed5afc786ee1b3",
+        "revision": "7942d682f502e8366eee77926574b6e7015b3eb9",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -411,14 +411,14 @@
       }
     },
     "build-essential": {
-      "version": "2.3.1",
-      "identifier": "877c80bb7579e0e15ae81e305021b68e92f30a3b",
-      "dotted_decimal_identifier": "38136014198634976.63431822745292833.200723467012667",
-      "cache_key": "build-essential-2.3.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.3.1/download",
+      "version": "2.4.0",
+      "identifier": "b7c609192df7ca257d62432d3b018abe6116fe92",
+      "dotted_decimal_identifier": "51727663117498314.10552435125598977.152550277316242",
+      "cache_key": "build-essential-2.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.4.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.3.1/download",
-        "version": "2.3.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.4.0/download",
+        "version": "2.4.0"
       }
     },
     "now": {
@@ -666,7 +666,7 @@
       ],
       [
         "build-essential",
-        "= 2.3.1"
+        "= 2.4.0"
       ],
       [
         "now",
@@ -1042,7 +1042,7 @@
       "zypper (0.2.1)": [
 
       ],
-      "build-essential (2.3.1)": [
+      "build-essential (2.4.0)": [
         [
           "7-zip",
           ">= 0.0.0"

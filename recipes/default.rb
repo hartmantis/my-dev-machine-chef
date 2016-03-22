@@ -109,6 +109,7 @@ include_recipe 'homebrew'
 # Homebrew Apps #
 #################
 homebrew_package 'ruby'
+homebrew_package 'tig'
 
 ##################
 # App Store Apps #
