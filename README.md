@@ -94,12 +94,19 @@ cookbook and add the default recipe to your run_list.
 * Drop off the validator key in `/etc/chef/validation.pem`
 * Drop off a `/etc/chef/client.rb`:
 
-    chef_server_url 'https://api.chef.io/organizations/roboticcheese'
-    validation_client_name 'roboticcheese-validator'
-    validation_key '/etc/chef/roboticcheese-validator.pem'
-    use_policyfile true
-    policy_group 'dev'
-    policy_name 'dev-machine'
+```
+chef_server_url 'https://api.chef.io/organizations/roboticcheese'
+validation_client_name 'roboticcheese-validator'
+use_policyfile true
+policy_group 'dev'
+policy_name 'dev-machine'
+```
+
+* Run Chef:
+
+```
+sudo chef-client
+```
 
 Recipes
 =======

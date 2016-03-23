@@ -15,6 +15,7 @@ require_relative 'support/provider/mac_os_x_userdefaults'
 
 RSpec.configure do |c|
   c.color = true
+  c.file_cache_path = '/var/chef/cache'
 
   c.before(:suite) do
     COOKBOOK_PATH = Dir.mktmpdir('chefspec')
