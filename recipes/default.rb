@@ -30,7 +30,7 @@ end
 chef_gem 'accessibility_core' do
   clear_sources true
   source local_path
-  compile_time true
+  compile_time false
 end
 
 %w(.bundle .chef .ssh .vim).each do |d|

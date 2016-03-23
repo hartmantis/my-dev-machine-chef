@@ -18,7 +18,7 @@ describe 'my-dev-machine::default' do
     expect(chef_run).to install_chef_gem('accessibility_core').with(
       clear_sources: true,
       source: '/var/chef/cache/accessibility_core-0.6.3.gem',
-      compile_time: true
+      compile_time: false
     )
   end
 
