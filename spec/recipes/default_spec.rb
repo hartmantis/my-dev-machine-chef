@@ -6,6 +6,10 @@ describe 'my-dev-machine::default' do
   let(:runner) { ChefSpec::SoloRunner.new }
   let(:chef_run) { runner.converge(described_recipe) }
 
+  it 'ensures build-essential is run' do
+    expect(chef_run).to include_recipe('build-essential')
+  end
+
   it 'downloads the forked copy of accessibility_core' do
     s = 'https://github.com/RoboticCheese/accessibility_core/releases/' \
         'download/v0.6.3/accessibility_core-0.6.3.gem'

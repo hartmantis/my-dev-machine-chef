@@ -23,6 +23,8 @@ remote_path = 'https://github.com/RoboticCheese/accessibility_core/releases/' \
               "download/v0.6.3/#{gem_file}"
 local_path = File.join(Chef::Config[:file_cache_path], gem_file)
 
+include_recipe 'build-essential'
+
 remote_file local_path do
   source remote_path
 end
