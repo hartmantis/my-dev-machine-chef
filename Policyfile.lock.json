@@ -1,5 +1,5 @@
 {
-  "revision_id": "af96f5fc20ccf6172471e54c9e0c19c66cd6d205b0342b720eeb4f1affb41b2c",
+  "revision_id": "7284e672250070310ef605f1354dc14d50d3fa1e8e3ff7648e79a669fe7149c0",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "84f1957ad7917adc8a4ef1ab1dbaf2b9cd1fd773",
-      "dotted_decimal_identifier": "37420321239175546.62076566542949818.266879824287603",
+      "identifier": "165e72668d1004539568de12e9fab258bccdfc23",
+      "dotted_decimal_identifier": "6296294927437828.23526700701903354.196094194482211",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "2e9f23f23914cefbeb7586b8a4c3b5edc0c0465a",
+        "revision": "ed7ff3b8bfa020cc57d5763ba12b9743512f5b32",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -508,6 +508,17 @@
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/airmail/versions/0.1.0/download",
         "version": "0.1.0"
       }
+    },
+    "paw": {
+      "version": "0.1.0",
+      "identifier": "6a3f39efed7fe14a1b90ccceaf5fa9ab8adbd551",
+      "dotted_decimal_identifier": "29905865602334689.20859457001926495.186554234164561",
+      "cache_key": "paw-0.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/paw/versions/0.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/paw/versions/0.1.0/download",
+        "version": "0.1.0"
+      }
     }
   },
   "default_attributes": {
@@ -698,6 +709,10 @@
       ],
       [
         "airmail",
+        "= 0.1.0"
+      ],
+      [
+        "paw",
         "= 0.1.0"
       ]
     ],
@@ -1089,6 +1104,12 @@
           "~> 1.0"
         ]
       ],
+      "paw (0.1.0)": [
+        [
+          "mac-app-store",
+          "~> 1.0"
+        ]
+      ],
       "my-dev-machine (0.0.1)": [
         [
           "build-essential",
@@ -1200,6 +1221,10 @@
         ],
         [
           "airmail",
+          "~> 0.1"
+        ],
+        [
+          "paw",
           "~> 0.1"
         ]
       ]

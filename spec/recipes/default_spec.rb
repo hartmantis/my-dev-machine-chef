@@ -184,6 +184,7 @@ describe 'my-dev-machine::default' do
     fantastical
     kindle
     airmail
+    paw
     dropbox
     box-sync
     gimp

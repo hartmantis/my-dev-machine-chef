@@ -140,6 +140,7 @@ include_recipe 'tweetbot'
 include_recipe 'fantastical'
 include_recipe 'kindle'
 include_recipe 'airmail'
+include_recipe 'paw'
 
 ##############
 # Other Apps #
