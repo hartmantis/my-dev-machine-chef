@@ -25,7 +25,6 @@ I use many apps that either need cookbooks or have cookbooks that need updates
 to work on OS X:
 
 * Evernote
-* Sparrow
 * MacVim
 * Vagrant
 * Atom
@@ -44,16 +43,12 @@ to work on OS X:
 * Handbrake
 * iMovie
 * Induction (DB GUI)
-* Kitematic
 * LibreOffice
 * MarkdownPro
 * MS Office
 * MusicBrainz Picard
-* Numbers
 * Netgear USB Control Center
 * OpenEmu
-* Pages
-* Paw
 * Postgres.app
 * Read Later
 * Reggy
@@ -65,6 +60,7 @@ to work on OS X:
 * Vagrant Manager
 * Vessel (http://awvessel.github.io)
 * WiFi Explorer
+* jexplorer
 
 Some apps do have cookbooks I just need to verify:
 
@@ -73,7 +69,7 @@ Some apps do have cookbooks I just need to verify:
 * Chrome
 * Adium
 * Virtualbox
-* Docker (boot2docker)
+* Docker
 * Firefox
 * XCode
 
