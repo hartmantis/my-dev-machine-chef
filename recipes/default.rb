@@ -139,6 +139,7 @@ include_recipe 'microsoft-remote-desktop'
 include_recipe 'tweetbot'
 include_recipe 'fantastical'
 include_recipe 'kindle'
+include_recipe 'airmail'
 
 ##############
 # Other Apps #

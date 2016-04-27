@@ -35,5 +35,6 @@ depends          'vmware-fusion', '~> 1.0'
 depends          'parallels', '~> 0.1'
 depends          'webhook', '~> 0.1'
 depends          'x2go-client', '~> 1.0'
+depends          'airmail', '~> 0.1'
 
 supports         'mac_os_x'

@@ -183,6 +183,7 @@ describe 'my-dev-machine::default' do
     tweetbot
     fantastical
     kindle
+    airmail
     dropbox
     box-sync
     gimp
