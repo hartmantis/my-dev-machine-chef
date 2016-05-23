@@ -61,6 +61,7 @@ to work on OS X:
 * Vessel (http://awvessel.github.io)
 * WiFi Explorer
 * jexplorer
+* Viscosity (or Tunnelblick or another OVPN client manager)
 
 Some apps do have cookbooks I just need to verify:
 
