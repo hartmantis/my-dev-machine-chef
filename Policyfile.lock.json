@@ -1,5 +1,5 @@
 {
-  "revision_id": "72c0d6e40ab0ed7a849bce7230b96cb831d947381968f50383bf922dc80c05de",
+  "revision_id": "a4070f3c71e1a60c76800b63f9e3bb58c9299980d5057616393324c1ab07e579",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,18 +7,18 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "ca28444b488ddf7ad3886b9308b614e0fe4c8c0c",
-      "dotted_decimal_identifier": "56902219081485791.34572530032511158.22956571659276",
+      "identifier": "f0dde1a74f737c27f80aa72168a7664f069062f5",
+      "dotted_decimal_identifier": "67797955654939516.11250248729061543.112489598575349",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "f7471fa5398d9db4202c170902f698d1e9b5e9f7",
+        "revision": "565fb7e0592e24aed8be518ab0562b3975f56009",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -70,14 +70,14 @@
       }
     },
     "chef-client": {
-      "version": "4.5.4",
-      "identifier": "eabe1a75604fdc801cde7825fd73c9cd43013d57",
-      "dotted_decimal_identifier": "66074165397966812.36060538843037043.221883429633367",
-      "cache_key": "chef-client-4.5.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.5.4/download",
+      "version": "4.6.0",
+      "identifier": "499655ed75d558e3b486e64c60d028341df302c0",
+      "dotted_decimal_identifier": "20712969100186968.64093311195701456.44204305875648",
+      "cache_key": "chef-client-4.6.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.6.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.5.4/download",
-        "version": "4.5.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.6.0/download",
+        "version": "4.6.0"
       }
     },
     "cron": {
@@ -542,7 +542,7 @@
       ],
       [
         "chef-client",
-        "= 4.5.4"
+        "= 4.6.0"
       ],
       [
         "cron",
@@ -723,7 +723,7 @@
       "chef_handler (1.4.0)": [
 
       ],
-      "chef-client (4.5.4)": [
+      "chef-client (4.6.0)": [
         [
           "cron",
           ">= 1.7.0"

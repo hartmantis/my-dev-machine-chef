@@ -23,3 +23,10 @@ default['chef_client']['config'].tap do |c|
   c['policy_group'] = 'dev'
   c['policy_name'] = 'dev-machine'
 end
+
+default['mac_app_store'].tap do |m|
+  di = Chef::EncryptedDataBagItem.load('dev', 'mac_app_store')
+  m['username'] = di['username']
+  m['password'] = di['password']
+  m['system_user'] = di['system_user']
+end
