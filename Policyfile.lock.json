@@ -1,5 +1,5 @@
 {
-  "revision_id": "a4070f3c71e1a60c76800b63f9e3bb58c9299980d5057616393324c1ab07e579",
+  "revision_id": "b1ff40b15c2ddb634547e049a28d9c22cf0e099c1b12752d3fb7d6ef6055457b",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "f0dde1a74f737c27f80aa72168a7664f069062f5",
-      "dotted_decimal_identifier": "67797955654939516.11250248729061543.112489598575349",
+      "identifier": "c96ee3ba159cd1c17fb7d6ca9fc1d83671ccb78e",
+      "dotted_decimal_identifier": "56698394677451985.54465098064502721.237728349075342",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "565fb7e0592e24aed8be518ab0562b3975f56009",
+        "revision": "9e41a513af6200eb088147fd2072326af67f8fad",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -147,14 +147,14 @@
       }
     },
     "mac-app-store": {
-      "version": "2.0.2",
-      "identifier": "59c5a547e85a07080e71d05fcc9c108c00082f49",
-      "dotted_decimal_identifier": "25268586593933831.2267681803717788.18193482002249",
-      "cache_key": "mac-app-store-2.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.0.2/download",
+      "version": "2.0.3",
+      "identifier": "43c9e3c2def189a745182ab255d11b763744e7e4",
+      "dotted_decimal_identifier": "19080803503763849.47082291208541649.30194547353572",
+      "cache_key": "mac-app-store-2.0.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.0.3/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.0.2/download",
-        "version": "2.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.0.3/download",
+        "version": "2.0.3"
       }
     },
     "knock": {
@@ -389,14 +389,14 @@
       }
     },
     "yum": {
-      "version": "3.10.0",
-      "identifier": "8129ef7e1e5fd5662b70520fff9cd740016fc68c",
-      "dotted_decimal_identifier": "36356380585517013.28758209037598620.236669901981324",
-      "cache_key": "yum-3.10.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.10.0/download",
+      "version": "3.11.0",
+      "identifier": "745861980c82176849ac817888fdd2b0d63ae008",
+      "dotted_decimal_identifier": "32748273484464663.29354402833271037.231656950259720",
+      "cache_key": "yum-3.11.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.11.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.10.0/download",
-        "version": "3.10.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/3.11.0/download",
+        "version": "3.11.0"
       }
     },
     "yum-epel": {
@@ -570,7 +570,7 @@
       ],
       [
         "mac-app-store",
-        "= 2.0.2"
+        "= 2.0.3"
       ],
       [
         "knock",
@@ -658,7 +658,7 @@
       ],
       [
         "yum",
-        "= 3.10.0"
+        "= 3.11.0"
       ],
       [
         "yum-epel",
@@ -761,7 +761,7 @@
           ">= 2.1.2"
         ]
       ],
-      "mac-app-store (2.0.2)": [
+      "mac-app-store (2.0.3)": [
         [
           "homebrew",
           "~> 2.1"
@@ -969,7 +969,7 @@
           "~> 0.3"
         ]
       ],
-      "yum (3.10.0)": [
+      "yum (3.11.0)": [
 
       ],
       "yum-epel (0.7.0)": [
