@@ -1,5 +1,5 @@
 {
-  "revision_id": "b1ff40b15c2ddb634547e049a28d9c22cf0e099c1b12752d3fb7d6ef6055457b",
+  "revision_id": "230d4442ee9e5ac9f05926c7d1dfb458f6c99588f5c02d6f333bcba2f4c57058",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,18 +7,18 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "c96ee3ba159cd1c17fb7d6ca9fc1d83671ccb78e",
-      "dotted_decimal_identifier": "56698394677451985.54465098064502721.237728349075342",
+      "identifier": "688e41d79371c695af34583f93535b1fe46ec2e6",
+      "dotted_decimal_identifier": "29429811018691014.42132410883609427.100192534577894",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "9e41a513af6200eb088147fd2072326af67f8fad",
+        "revision": "ac83ab52a098715add257816247b6bf6d174621e",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/master"
+
         ]
       },
       "source_options": {
@@ -48,14 +48,14 @@
       }
     },
     "windows": {
-      "version": "1.42.0",
-      "identifier": "02bf10d06ed96267158d2d35b10e6c8c6daef63f",
-      "dotted_decimal_identifier": "773028890728802.29015618694263054.119350391404095",
-      "cache_key": "windows-1.42.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.42.0/download",
+      "version": "1.43.0",
+      "identifier": "e462959d40bb34df4a4da50b6d1bec33b2c7cb7e",
+      "dotted_decimal_identifier": "64284689417943860.62850617148402971.259706786925438",
+      "cache_key": "windows-1.43.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.43.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.42.0/download",
-        "version": "1.42.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.43.0/download",
+        "version": "1.43.0"
       }
     },
     "chef_handler": {
@@ -147,14 +147,25 @@
       }
     },
     "mac-app-store": {
-      "version": "2.0.3",
-      "identifier": "43c9e3c2def189a745182ab255d11b763744e7e4",
-      "dotted_decimal_identifier": "19080803503763849.47082291208541649.30194547353572",
-      "cache_key": "mac-app-store-2.0.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.0.3/download",
+      "version": "2.1.0",
+      "identifier": "d4b9d68e9ff2f684e5cd96cf5193df0bff05e3c7",
+      "dotted_decimal_identifier": "59877026229646070.37407368087032211.245242616210375",
+      "cache_key": "mac-app-store-2.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.1.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.0.3/download",
-        "version": "2.0.3"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/2.1.0/download",
+        "version": "2.1.0"
+      }
+    },
+    "reattach-to-user-namespace": {
+      "version": "0.1.0",
+      "identifier": "1fbbbd4fa1887a02006f3b9ad0d64459b09bfac4",
+      "dotted_decimal_identifier": "8932146037229690.563427694792918.75152005790404",
+      "cache_key": "reattach-to-user-namespace-0.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/reattach-to-user-namespace/versions/0.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/reattach-to-user-namespace/versions/0.1.0/download",
+        "version": "0.1.0"
       }
     },
     "knock": {
@@ -511,9 +522,7 @@
     }
   },
   "default_attributes": {
-    "mac_app_store": {
-      "username": "j@p4nt5.com"
-    }
+
   },
   "override_attributes": {
 
@@ -534,7 +543,7 @@
       ],
       [
         "windows",
-        "= 1.42.0"
+        "= 1.43.0"
       ],
       [
         "chef_handler",
@@ -570,7 +579,11 @@
       ],
       [
         "mac-app-store",
-        "= 2.0.3"
+        "= 2.1.0"
+      ],
+      [
+        "reattach-to-user-namespace",
+        "= 0.1.0"
       ],
       [
         "knock",
@@ -714,7 +727,7 @@
           ">= 1.2.2"
         ]
       ],
-      "windows (1.42.0)": [
+      "windows (1.43.0)": [
         [
           "chef_handler",
           ">= 0.0.0"
@@ -761,7 +774,17 @@
           ">= 2.1.2"
         ]
       ],
-      "mac-app-store (2.0.3)": [
+      "mac-app-store (2.1.0)": [
+        [
+          "homebrew",
+          "~> 2.1"
+        ],
+        [
+          "reattach-to-user-namespace",
+          "~> 0.1"
+        ]
+      ],
+      "reattach-to-user-namespace (0.1.0)": [
         [
           "homebrew",
           "~> 2.1"
@@ -1103,7 +1126,7 @@
         ],
         [
           "mac-app-store",
-          "~> 2.0"
+          "~> 2.1"
         ],
         [
           "knock",
