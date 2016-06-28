@@ -1,5 +1,5 @@
 {
-  "revision_id": "230d4442ee9e5ac9f05926c7d1dfb458f6c99588f5c02d6f333bcba2f4c57058",
+  "revision_id": "66b4a59f66816baff1ed7b5816a79f59522296fe1682074c3070709ef9e36836",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,18 +7,18 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "688e41d79371c695af34583f93535b1fe46ec2e6",
-      "dotted_decimal_identifier": "29429811018691014.42132410883609427.100192534577894",
+      "identifier": "c0ef596dc0c44b0f47983a4236313089a56da7d2",
+      "dotted_decimal_identifier": "54306362900923467.4300843788678705.53367744079826",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "ac83ab52a098715add257816247b6bf6d174621e",
-        "working_tree_clean": false,
-        "published": false,
+        "revision": "b5d28208f19c388cff44f02522407db693c5e6c7",
+        "working_tree_clean": true,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -48,14 +48,14 @@
       }
     },
     "windows": {
-      "version": "1.43.0",
-      "identifier": "e462959d40bb34df4a4da50b6d1bec33b2c7cb7e",
-      "dotted_decimal_identifier": "64284689417943860.62850617148402971.259706786925438",
-      "cache_key": "windows-1.43.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.43.0/download",
+      "version": "1.44.0",
+      "identifier": "f7f7bf67af2da8a0a5bde182e84c78bdb61d769e",
+      "dotted_decimal_identifier": "69796720697879976.45218231224559692.132756199536286",
+      "cache_key": "windows-1.44.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.43.0/download",
-        "version": "1.43.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.0/download",
+        "version": "1.44.0"
       }
     },
     "chef_handler": {
@@ -543,7 +543,7 @@
       ],
       [
         "windows",
-        "= 1.43.0"
+        "= 1.44.0"
       ],
       [
         "chef_handler",
@@ -715,6 +715,124 @@
       ]
     ],
     "dependencies": {
+      "my-dev-machine (0.0.1)": [
+        [
+          "build-essential",
+          "~> 3.0"
+        ],
+        [
+          "chef-client",
+          "~> 4.3"
+        ],
+        [
+          "mac_os_x",
+          "~> 1.4"
+        ],
+        [
+          "chef-dk",
+          "~> 3.0"
+        ],
+        [
+          "homebrew",
+          "~> 2.0"
+        ],
+        [
+          "mac-app-store",
+          "~> 2.1"
+        ],
+        [
+          "knock",
+          "~> 0.1"
+        ],
+        [
+          "iwork",
+          "~> 1.0"
+        ],
+        [
+          "divvy",
+          "~> 1.0"
+        ],
+        [
+          "microsoft-remote-desktop",
+          "~> 1.2"
+        ],
+        [
+          "tweetbot",
+          "~> 1.1"
+        ],
+        [
+          "fantastical",
+          "~> 1.0"
+        ],
+        [
+          "gimp",
+          "~> 1.0"
+        ],
+        [
+          "iterm2",
+          "~> 1.4"
+        ],
+        [
+          "kindle",
+          "~> 1.0"
+        ],
+        [
+          "dropbox",
+          "~> 0.1"
+        ],
+        [
+          "box-sync",
+          "~> 1.0"
+        ],
+        [
+          "private-internet-access",
+          "~> 0.1"
+        ],
+        [
+          "plex-home-theater",
+          "~> 1.0"
+        ],
+        [
+          "skype-app",
+          "~> 0.1"
+        ],
+        [
+          "spotify",
+          "~> 1.0"
+        ],
+        [
+          "steam",
+          "~> 2.1"
+        ],
+        [
+          "vlc",
+          "~> 1.0"
+        ],
+        [
+          "vmware-fusion",
+          "~> 1.0"
+        ],
+        [
+          "parallels",
+          "~> 0.1"
+        ],
+        [
+          "webhook",
+          "~> 0.1"
+        ],
+        [
+          "x2go-client",
+          "~> 1.0"
+        ],
+        [
+          "airmail",
+          "~> 1.2"
+        ],
+        [
+          "paw",
+          "~> 0.1"
+        ]
+      ],
       "build-essential (3.2.0)": [
         [
           "seven_zip",
@@ -727,7 +845,7 @@
           ">= 1.2.2"
         ]
       ],
-      "windows (1.43.0)": [
+      "windows (1.44.0)": [
         [
           "chef_handler",
           ">= 0.0.0"
@@ -1101,124 +1219,6 @@
         [
           "mac-app-store",
           "~> 2.0"
-        ]
-      ],
-      "my-dev-machine (0.0.1)": [
-        [
-          "build-essential",
-          "~> 3.0"
-        ],
-        [
-          "chef-client",
-          "~> 4.3"
-        ],
-        [
-          "mac_os_x",
-          "~> 1.4"
-        ],
-        [
-          "chef-dk",
-          "~> 3.0"
-        ],
-        [
-          "homebrew",
-          "~> 2.0"
-        ],
-        [
-          "mac-app-store",
-          "~> 2.1"
-        ],
-        [
-          "knock",
-          "~> 0.1"
-        ],
-        [
-          "iwork",
-          "~> 1.0"
-        ],
-        [
-          "divvy",
-          "~> 1.0"
-        ],
-        [
-          "microsoft-remote-desktop",
-          "~> 1.2"
-        ],
-        [
-          "tweetbot",
-          "~> 1.1"
-        ],
-        [
-          "fantastical",
-          "~> 1.0"
-        ],
-        [
-          "gimp",
-          "~> 1.0"
-        ],
-        [
-          "iterm2",
-          "~> 1.4"
-        ],
-        [
-          "kindle",
-          "~> 1.0"
-        ],
-        [
-          "dropbox",
-          "~> 0.1"
-        ],
-        [
-          "box-sync",
-          "~> 1.0"
-        ],
-        [
-          "private-internet-access",
-          "~> 0.1"
-        ],
-        [
-          "plex-home-theater",
-          "~> 1.0"
-        ],
-        [
-          "skype-app",
-          "~> 0.1"
-        ],
-        [
-          "spotify",
-          "~> 1.0"
-        ],
-        [
-          "steam",
-          "~> 2.1"
-        ],
-        [
-          "vlc",
-          "~> 1.0"
-        ],
-        [
-          "vmware-fusion",
-          "~> 1.0"
-        ],
-        [
-          "parallels",
-          "~> 0.1"
-        ],
-        [
-          "webhook",
-          "~> 0.1"
-        ],
-        [
-          "x2go-client",
-          "~> 1.0"
-        ],
-        [
-          "airmail",
-          "~> 1.2"
-        ],
-        [
-          "paw",
-          "~> 0.1"
         ]
       ]
     }
