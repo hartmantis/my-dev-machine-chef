@@ -18,22 +18,7 @@
 # limitations under the License.
 #
 
-gem_file = 'accessibility_core-0.6.3.gem'
-remote_path = 'https://github.com/RoboticCheese/accessibility_core/releases/' \
-              "download/v0.6.3/#{gem_file}"
-local_path = File.join(Chef::Config[:file_cache_path], gem_file)
-
 include_recipe 'build-essential'
-
-remote_file local_path do
-  source remote_path
-end
-
-chef_gem 'accessibility_core' do
-  clear_sources true
-  source local_path
-  compile_time false
-end
 
 %w(.bundle .chef .ssh .vim).each do |d|
   directory File.expand_path("~/#{d}") do
