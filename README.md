@@ -24,6 +24,20 @@ To Do
 I use many apps that either need cookbooks or have cookbooks that need updates
 to work on OS X:
 
+
+* oh-my-zsh
+* Atom
+* Visual Studio Code
+* Tunnelblick
+* Docker for Mac
+* Spark
+* MicroSnitch
+* Sophos or Avira
+* BlockBlock
+* Little Flocker
+* Little Snitch
+* Microsoft Office
+
 * Evernote
 * MacVim
 * Vagrant
@@ -45,7 +59,6 @@ to work on OS X:
 * Induction (DB GUI)
 * LibreOffice
 * MarkdownPro
-* MS Office
 * MusicBrainz Picard
 * Netgear USB Control Center
 * OpenEmu
@@ -70,7 +83,6 @@ Some apps do have cookbooks I just need to verify:
 * Chrome
 * Adium
 * Virtualbox
-* Docker
 * Firefox
 * XCode
 
