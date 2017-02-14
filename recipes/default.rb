@@ -117,15 +117,11 @@ homebrew_package 'tig'
 # App Store Apps #
 ##################
 include_recipe 'mac-app-store'
-include_recipe 'knock'
 include_recipe 'iwork'
-include_recipe 'divvy'
 include_recipe 'microsoft-remote-desktop'
 include_recipe 'tweetbot'
 include_recipe 'fantastical'
 include_recipe 'kindle'
-include_recipe 'airmail'
-include_recipe 'paw'
 
 ##############
 # Other Apps #
@@ -142,5 +138,4 @@ include_recipe 'skype-app'
 include_recipe 'vlc'
 include_recipe 'vmware-fusion'
 include_recipe 'parallels'
-include_recipe 'webhook'
 include_recipe 'x2go-client'

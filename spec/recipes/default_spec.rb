@@ -160,15 +160,11 @@ describe 'my-dev-machine::default' do
     chef-client::delete_validation
     homebrew
     mac-app-store
-    knock
     iwork
-    divvy
     microsoft-remote-desktop
     tweetbot
     fantastical
     kindle
-    airmail
-    paw
     dropbox
     box-sync
     gimp
@@ -181,7 +177,6 @@ describe 'my-dev-machine::default' do
     vlc
     vmware-fusion
     parallels
-    webhook
     x2go-client
   ).each do |r|
     it "includes #{r}" do

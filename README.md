@@ -74,6 +74,11 @@ Some apps do have cookbooks I just need to verify:
 * Firefox
 * XCode
 
+Some apps need some patching for their cookbooks to work again:
+
+* divvy - Issues with privacy_services_manager in Sierra
+* paw - Needs to be converted to the non-App Store version
+
 Usage
 =====
 
