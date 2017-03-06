@@ -1,5 +1,5 @@
 {
-  "revision_id": "50255a958c50d4269ccc6e3f7354a6f070595af7e8a4ffb25f470d23d2f18b91",
+  "revision_id": "0dc537650379596e58b7273b7c88236ec798240cae7176fd38c0f9b1db2bfa04",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "45016f0d3f5d54ffde817cc2d447f48c160c1142",
-      "dotted_decimal_identifier": "19423349868289364.72020766786507847.268882502488386",
+      "identifier": "8945b3033404a7f7752656bb5382add2171647ac",
+      "dotted_decimal_identifier": "38638706964563111.69653126771856258.191117842073516",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "5b30269461c54d04a3263c505f41cb040e28d215",
+        "revision": "40888e9ea01d2829f5cb4da458bbfbbdd3113a81",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -220,28 +220,6 @@
       ]
     ],
     "dependencies": {
-      "my-dev-machine (0.0.1)": [
-        [
-          "build-essential",
-          "~> 8.0"
-        ],
-        [
-          "chef-client",
-          "~> 7.2"
-        ],
-        [
-          "mac_os_x",
-          "~> 1.4"
-        ],
-        [
-          "homebrew",
-          "~> 3.0"
-        ],
-        [
-          "dmg",
-          "~> 3.0"
-        ]
-      ],
       "build-essential (8.0.0)": [
         [
           "seven_zip",
@@ -307,6 +285,28 @@
       ],
       "ohai (5.0.0)": [
 
+      ],
+      "my-dev-machine (0.0.1)": [
+        [
+          "build-essential",
+          "~> 8.0"
+        ],
+        [
+          "chef-client",
+          "~> 7.2"
+        ],
+        [
+          "mac_os_x",
+          "~> 1.4"
+        ],
+        [
+          "homebrew",
+          "~> 3.0"
+        ],
+        [
+          "dmg",
+          "~> 3.0"
+        ]
       ]
     }
   }
