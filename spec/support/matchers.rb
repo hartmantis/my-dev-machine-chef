@@ -1,4 +1,5 @@
-# Encoding: UTF-8
+# encoding: utf-8
+# frozen_string_literal: true
 
 if defined?(ChefSpec)
   ChefSpec.define_matcher(:mac_os_x_userdefaults)

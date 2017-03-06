@@ -37,6 +37,9 @@ to work on OS X:
 * Little Flocker
 * Little Snitch
 * Microsoft Office
+* Typora(?)
+* Veertu Desktop
+* Amazon Cloud Drive
 
 * Evernote
 * MacVim

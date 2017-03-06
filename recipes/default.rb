@@ -1,9 +1,10 @@
-# Encoding: UTF-8
+# encoding: utf-8
+# frozen_string_literal: true
 #
 # Cookbook Name:: my-dev-machine
 # Recipe:: default
 #
-# Copyright 2015 Jonathan Hartman
+# Copyright 2015-2017, Jonathan Hartman
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,33 +21,33 @@
 
 include_recipe 'build-essential'
 
-%w(.bundle .chef .ssh .vim).each do |d|
-  directory File.expand_path("~/#{d}") do
-    action :delete
-    recursive true
-    only_if { File.directory?(File.expand_path("~/#{d}")) }
-  end
-end
+# %w(.bundle .chef .ssh .vim).each do |d|
+#   directory File.expand_path("~/#{d}") do
+#     action :delete
+#     recursive true
+#     only_if { File.directory?(File.expand_path("~/#{d}")) }
+#   end
+# end
+# 
+# %w(.profile .gitconfig .vimrc .vimrc.local).each do |f|
+#   file File.expand_path("~/#{f}") do
+#     action :delete
+#     only_if do
+#       path = File.expand_path("~/#{f}")
+#       File.exist?(path) && File.ftype(path) != 'link'
+#     end
+#   end
+# end
 
-%w(.profile .gitconfig .vimrc .vimrc.local).each do |f|
-  file File.expand_path("~/#{f}") do
-    action :delete
-    only_if do
-      path = File.expand_path("~/#{f}")
-      File.exist?(path) && File.ftype(path) != 'link'
-    end
-  end
-end
-
+#  .bundle
+#  .vim
+#  .profile
+#  .vimrc
+#  .vimrc.local
 %w(
-  .bundle
   .chef
   .ssh
-  .vim
-  .profile
   .gitconfig
-  .vimrc
-  .vimrc.local
 ).each do |l|
   link File.expand_path("~/#{l}") do
     to File.expand_path("~/Dropbox/#{l}")
@@ -101,7 +102,7 @@ mac_os_x_userdefaults 'com.apple.menuextra.battery ShowPercent' do
   notifies :run, 'execute[killall SystemUIServer]'
 end
 
-include_recipe 'chef-dk'
+# include_recipe 'chef-dk'
 include_recipe 'chef-client'
 include_recipe 'chef-client::config'
 include_recipe 'chef-client::delete_validation'
@@ -116,26 +117,26 @@ homebrew_package 'tig'
 ##################
 # App Store Apps #
 ##################
-include_recipe 'mac-app-store'
-include_recipe 'iwork'
-include_recipe 'microsoft-remote-desktop'
-include_recipe 'tweetbot'
-include_recipe 'fantastical'
+# include_recipe 'mac-app-store'
+# include_recipe 'iwork'
+# include_recipe 'microsoft-remote-desktop'
+# include_recipe 'tweetbot'
+# include_recipe 'fantastical'
 # include_recipe 'kindle'
 
 ##############
 # Other Apps #
 ##############
-include_recipe 'dropbox'
+# include_recipe 'dropbox'
 # include_recipe 'box-sync'
 # include_recipe 'gimp'
-include_recipe 'iterm2'
-include_recipe 'spotify'
+# include_recipe 'iterm2'
+# include_recipe 'spotify'
 # include_recipe 'steam'
-include_recipe 'plex-home-theater'
-include_recipe 'private-internet-access'
-include_recipe 'skype-app'
-include_recipe 'vlc'
+# include_recipe 'plex-home-theater'
+# include_recipe 'private-internet-access'
+# include_recipe 'skype-app'
+# include_recipe 'vlc'
 # include_recipe 'vmware-fusion'
 # include_recipe 'parallels'
 # include_recipe 'x2go-client'
