@@ -28,7 +28,7 @@ include_recipe 'build-essential'
 #     only_if { File.directory?(File.expand_path("~/#{d}")) }
 #   end
 # end
-# 
+#
 # %w(.profile .gitconfig .vimrc .vimrc.local).each do |f|
 #   file File.expand_path("~/#{f}") do
 #     action :delete
@@ -38,6 +38,12 @@ include_recipe 'build-essential'
 #     end
 #   end
 # end
+
+directory File.expand_path('~/.ssh') do
+  recursive true
+  action :delete
+  only_if { File.ftype(File.expand_path('~/.ssh')) != 'link' }
+end
 
 #  .bundle
 #  .vim
