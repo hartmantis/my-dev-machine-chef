@@ -109,8 +109,8 @@ cookbook and add the default recipe to your run_list.
 * Enable any auto-imported email/Facebook/Twitter accounts
 * In App Store settings, enable password saving for free apps
 * Install Xcode manually (for now)
-* Open Xcode and accept the license agreement (or Homebrew fails to install)
-* Enable passwordless sudo (or Homebrew fails to install)
+* Open Xcode and accept the license agreement (or Homebrew fails to install)(is this still true?)
+* Enable passwordless sudo (or Homebrew fails to install)(is this still true?)
 * Download and install the [Chef-DK](https://downloads.chef.io/chef-dk/)
 * Drop off the validator key in `/etc/chef/validation.pem`
 * Drop off the data bag secret in `/etc/chef/encrypted_data_bag_secret`

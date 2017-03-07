@@ -19,6 +19,7 @@
 # limitations under the License.
 #
 
+normal['chef_client']['bin'] = '/usr/local/bin/chef-wrapper'
 default['chef_client']['config'].tap do |c|
   c['use_policyfile'] = true
   c['policy_group'] = 'dev'

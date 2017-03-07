@@ -19,6 +19,35 @@
 # limitations under the License.
 #
 
+# Wrap Chef inside a double-sudo so that our references to `~` and
+# `Etc.getlogin` will still work even when the LaunchDaemon is running Chef
+# as root.
+file "/etc/sudoers.d/#{File.basename(node['chef_client']['bin'])}" do
+  content <<-EOH.gsub(/^ +/, '')
+    # This file is managed by Chef. Any changes will be overwritten.
+
+    #{Etc.getlogin} ALL=NOPASSWD: /opt/chefdk/embedded/bin/chef-client
+  EOH
+end
+
+file node['chef_client']['bin'] do
+  mode '0755'
+  content <<-EOH.gsub(/^ +/, '')
+    #!/bin/bash
+    #
+    # This file is managed by Chef. Any changes will be overwritten.
+
+    set -e
+    sudo -u #{Etc.getlogin} -i sudo /opt/chefdk/embedded/bin/chef-client
+  EOH
+end
+include_recipe 'chef-client'
+t = resources(template: '/Library/LaunchDaemons/com.chef.chef-client.plist')
+t.variables(launchd_mode: node['chef_client']['launchd_mode'],
+            client_bin: node['chef_client']['bin'])
+include_recipe 'chef-client::config'
+include_recipe 'chef-client::delete_validation'
+
 include_recipe 'build-essential'
 
 # %w(.bundle .chef .ssh .vim).each do |d|
@@ -109,9 +138,6 @@ mac_os_x_userdefaults 'com.apple.menuextra.battery ShowPercent' do
 end
 
 # include_recipe 'chef-dk'
-include_recipe 'chef-client'
-include_recipe 'chef-client::config'
-include_recipe 'chef-client::delete_validation'
 include_recipe 'homebrew'
 
 #################
