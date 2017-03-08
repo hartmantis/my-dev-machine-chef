@@ -51,22 +51,24 @@ include_recipe 'chef-client::delete_validation'
 include_recipe 'build-essential'
 
 # %w(.bundle .chef .ssh .vim).each do |d|
-#   directory File.expand_path("~/#{d}") do
-#     action :delete
-#     recursive true
-#     only_if { File.directory?(File.expand_path("~/#{d}")) }
-#   end
-# end
-#
+%w(.chef).each do |d|
+  directory File.expand_path("~/#{d}") do
+    action :delete
+    recursive true
+    only_if { File.directory?(File.expand_path("~/#{d}")) }
+  end
+end
+
 # %w(.profile .gitconfig .vimrc .vimrc.local).each do |f|
-#   file File.expand_path("~/#{f}") do
-#     action :delete
-#     only_if do
-#       path = File.expand_path("~/#{f}")
-#       File.exist?(path) && File.ftype(path) != 'link'
-#     end
-#   end
-# end
+%w(.gitconfig).each do |f|
+  file File.expand_path("~/#{f}") do
+    action :delete
+    only_if do
+      path = File.expand_path("~/#{f}")
+      File.exist?(path) && File.ftype(path) != 'link'
+    end
+  end
+end
 
 directory File.expand_path('~/.ssh') do
   recursive true
@@ -85,7 +87,7 @@ end
   .gitconfig
 ).each do |l|
   link File.expand_path("~/#{l}") do
-    to File.expand_path("~/Dropbox/#{l}")
+    to File.expand_path("~/Dropbox/Home/#{l}")
   end
 end
 
