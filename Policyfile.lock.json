@@ -1,5 +1,5 @@
 {
-  "revision_id": "f0a7f1ceecedfd2174fc5fbc74d6e4d28fd30d7c3901638873ff2fa804dd7a63",
+  "revision_id": "62d564da7b285eee1ce1f4c8d0c30d3aaaee68c81f8f88a8f50afc999326107c",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "bfbe18cc7fa357c66ece6cc76b759dcb2a2ba6b3",
-      "dotted_decimal_identifier": "53970734271144791.55853878256036725.173495911425715",
+      "identifier": "7c8b3c11e21cd685deb50c3514cc2761d5fb05a7",
+      "dotted_decimal_identifier": "35055987226451158.37681041077769420.43301155308967",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "c9e0b913d12e0372c1687bc6def3564561511cef",
+        "revision": "900d73f3362c5be9cb04a83c600a7f428df410ee",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -114,14 +114,14 @@
       }
     },
     "cron": {
-      "version": "3.0.0",
-      "identifier": "fce38b7e1531080788a705dd699075e5dca81261",
-      "dotted_decimal_identifier": "71181882386362632.2120575776287120.129630109962849",
-      "cache_key": "cron-3.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/3.0.0/download",
+      "version": "4.0.0",
+      "identifier": "3b5410d5a49ef1f644ae0f1465649955da1244d3",
+      "dotted_decimal_identifier": "16699454906474225.69318358638814564.168594009900243",
+      "cache_key": "cron-4.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/4.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/3.0.0/download",
-        "version": "3.0.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/4.0.0/download",
+        "version": "4.0.0"
       }
     },
     "logrotate": {
@@ -204,7 +204,7 @@
       ],
       [
         "cron",
-        "= 3.0.0"
+        "= 4.0.0"
       ],
       [
         "logrotate",
@@ -271,7 +271,7 @@
           ">= 4.0.0"
         ]
       ],
-      "cron (3.0.0)": [
+      "cron (4.0.0)": [
 
       ],
       "logrotate (2.1.0)": [

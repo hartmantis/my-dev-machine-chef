@@ -134,6 +134,7 @@ mac_os_x_userdefaults 'com.apple.menuextra.battery ShowPercent' do
   type 'string'
   value 'YES'
   user Etc.getlogin
+  # TODO: Why is this notification happening on every run?
   notifies :run, 'execute[killall SystemUIServer]'
 end
 
@@ -159,6 +160,32 @@ homebrew_package 'tig'
 ##############
 # Other Apps #
 ##############
+%w(
+  iterm2
+  dropbox
+  tunnelblick
+  spotify
+).each do |c|
+  homebrew_cask c
+end
+
+dir = File.expand_path('~/Library/Application Support/Tunnelblick')
+directory dir do
+  owner Etc.getlogin
+  group 'staff'
+  recursive true
+end
+directory File.join(dir, 'Configurations') do
+  recursive true
+  action :delete
+  only_if { File.exist?(dir) && File.ftype(dir) != 'link' }
+end
+link File.join(dir, 'Configurations') do
+  to File.expand_path(
+    "~/Dropbox/Home/Application-Support-Tunnelblick-Configurations"
+  )
+end
+
 # include_recipe 'dropbox'
 # include_recipe 'box-sync'
 # include_recipe 'gimp'
