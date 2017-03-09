@@ -147,6 +147,10 @@ include_recipe 'homebrew'
 # Homebrew Apps #
 #################
 homebrew_package 'ruby'
+gem_package 'bundler' do
+  gem_binary '/usr/local/bin/gem'
+end
+
 homebrew_package 'tig'
 
 ##################
