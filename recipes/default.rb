@@ -166,11 +166,22 @@ homebrew_package 'tig'
 ##############
 # Other Apps #
 ##############
+
+# The install script for Vagrant tries to run `sudo -E ... installer ...`
+file '/etc/sudoers.d/installer' do
+  content <<-EOH.gsub(/^ +/, '')
+    # This file is managed by Chef. Any changes will be overwritten.
+
+    #{Etc.getlogin} ALL=NOPASSWD:SETENV: /usr/sbin/installer
+  EOH
+end
+
 %w(
   iterm2
   dropbox
   tunnelblick
   spotify
+  vagrant
 ).each do |c|
   homebrew_cask c
 end
