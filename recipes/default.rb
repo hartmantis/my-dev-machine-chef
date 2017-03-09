@@ -146,6 +146,7 @@ include_recipe 'homebrew'
 #################
 # Homebrew Apps #
 #################
+homebrew_package 'python3'
 homebrew_package 'ruby'
 gem_package 'bundler' do
   gem_binary '/usr/local/bin/gem'
@@ -182,8 +183,15 @@ end
   tunnelblick
   spotify
   vagrant
+  docker
 ).each do |c|
   homebrew_cask c
+end
+
+execute 'Start Docker' do
+  command 'open /Applications/Docker.app'
+  action :nothing
+  subscribes :run, 'homebrew_cask[docker]', :immediately
 end
 
 dir = File.expand_path('~/Library/Application Support/Tunnelblick')

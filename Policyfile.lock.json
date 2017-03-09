@@ -1,5 +1,5 @@
 {
-  "revision_id": "dac4fa96876bfded9c0d0ab2675771d0c76ece1cfa55b90862ecaf23bbfba382",
+  "revision_id": "ea0777825fac618f6bdca082c89437b4ebe53c0443e82fecdee53cb6e8afb1cd",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "e2dc367afd74e7352393b7cae8e83309344a5013",
-      "dotted_decimal_identifier": "63855471286383847.14957291116357864.56114625007635",
+      "identifier": "777afe44cf979df4926cd4d49ac22c6014040ed0",
+      "dotted_decimal_identifier": "33630754723305373.68840890442226370.48791164292816",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "23d08c90c3187fd40e1ce1258915b697fe3d4933",
+        "revision": "9bbea85f38fa9cc5e04dd8e2c2b128009c42100f",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
