@@ -50,6 +50,18 @@ include_recipe 'chef-client::delete_validation'
 
 include_recipe 'build-essential'
 
+git File.expand_path('~/.oh-my-zsh') do
+  repository 'https://github.com/robbyrussell/oh-my-zsh'
+end
+file File.expand_path('~/.zshrc') do
+  content lazy {
+    File.read(File.expand_path('~/.oh-my-zsh/templates/zshrc.zsh-template'))
+  }
+end
+user Etc.getlogin do
+  shell '/bin/zsh'
+end
+
 # %w(.bundle .chef .ssh .vim).each do |d|
 %w(.chef).each do |d|
   directory File.expand_path("~/#{d}") do
@@ -75,6 +87,8 @@ directory File.expand_path('~/.ssh') do
   action :delete
   only_if { File.ftype(File.expand_path('~/.ssh')) != 'link' }
 end
+
+# /var/root/.ssh?
 
 #  .bundle
 #  .vim
@@ -153,6 +167,7 @@ gem_package 'bundler' do
 end
 
 homebrew_package 'tig'
+homebrew_package 'packer'
 
 ##################
 # App Store Apps #
