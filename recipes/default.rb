@@ -199,6 +199,7 @@ end
   spotify
   vagrant
   docker
+  virtualbox
 ).each do |c|
   homebrew_cask c
 end
