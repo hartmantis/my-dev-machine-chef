@@ -37,4 +37,5 @@ default['mac_app_store'].tap do |m|
   m['apps']['Slack'] = true
   m['apps']['Spark - Love your email again'] = true
   m['apps']['Divvy - Window Manager'] = true
+  m['apps']['Fantastical 2 - Calendar and Reminders'] = true
 end
