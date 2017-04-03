@@ -97,8 +97,11 @@ end
 #  .vimrc.local
 %w(
   .chef
+  .stove
   .ssh
   .gitconfig
+  .aws
+  .provisionatorcli.toml
 ).each do |l|
   link File.expand_path("~/#{l}") do
     to File.expand_path("~/Dropbox/Home/#{l}")
@@ -160,6 +163,7 @@ include_recipe 'homebrew'
 #################
 # Homebrew Apps #
 #################
+homebrew_package 'postgresql'
 homebrew_package 'python3'
 homebrew_package 'ruby'
 gem_package 'bundler' do
@@ -172,7 +176,7 @@ homebrew_package 'packer'
 ##################
 # App Store Apps #
 ##################
-# include_recipe 'mac-app-store'
+include_recipe 'mac-app-store'
 # include_recipe 'iwork'
 # include_recipe 'microsoft-remote-desktop'
 # include_recipe 'tweetbot'
@@ -200,6 +204,7 @@ end
   vagrant
   docker
   virtualbox
+  google-chrome
 ).each do |c|
   homebrew_cask c
 end

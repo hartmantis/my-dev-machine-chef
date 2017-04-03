@@ -1,5 +1,5 @@
 {
-  "revision_id": "34085c55ea2c1d5ed604684a202a7cb7496ab4d0f20db165ddd58b82a7779623",
+  "revision_id": "665d6512144a870b0da212c76d1700866fe84629062acaad497590f9bc3d76f4",
   "name": "dev-machine",
   "run_list": [
     "recipe[my-dev-machine::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "my-dev-machine": {
       "version": "0.0.1",
-      "identifier": "8cb31ed00571c7f08a18b0046011ce751fb47cc5",
-      "dotted_decimal_identifier": "39603441659900359.67705833047482385.227002438417605",
+      "identifier": "a09f2a779d2a69d7ab1e4a340e49f74688fe37a8",
+      "dotted_decimal_identifier": "45211001017936489.60705266575085129.271882318133160",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/RoboticCheese/my-dev-machine-chef.git",
-        "revision": "64d1f70bdfc5e33299944725e28a9d07f6f01451",
+        "revision": "089c652658721b229611230182945e61c74d58eb",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -37,14 +37,14 @@
       }
     },
     "chef-client": {
-      "version": "7.2.0",
-      "identifier": "19d52b500795934361432074761cf9c6248f7512",
-      "dotted_decimal_identifier": "7271256420750739.18965764374820380.274629412222226",
-      "cache_key": "chef-client-7.2.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/7.2.0/download",
+      "version": "7.2.1",
+      "identifier": "c47fd5b4fb870e3d27eff2e763b6b6153e03aae1",
+      "dotted_decimal_identifier": "55309651276433166.17213885105267638.200202350996193",
+      "cache_key": "chef-client-7.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/7.2.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/7.2.0/download",
-        "version": "7.2.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/7.2.1/download",
+        "version": "7.2.1"
       }
     },
     "mac_os_x": {
@@ -69,6 +69,17 @@
         "version": "3.0.0"
       }
     },
+    "mac-app-store": {
+      "version": "3.0.0",
+      "identifier": "303c471dab86f90b430729e4e6f37a733436cfd0",
+      "dotted_decimal_identifier": "13577075020236537.3169922790516467.134635215835088",
+      "cache_key": "mac-app-store-3.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/3.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac-app-store/versions/3.0.0/download",
+        "version": "3.0.0"
+      }
+    },
     "dmg": {
       "version": "3.1.0",
       "identifier": "d0d1b4ae6475e41e52549673ec274452da65942f",
@@ -78,6 +89,17 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/dmg/versions/3.1.0/download",
         "version": "3.1.0"
+      }
+    },
+    "reattach-to-user-namespace": {
+      "version": "0.2.0",
+      "identifier": "7731971e80f66c02f337bbe95658edd29d2faa64",
+      "dotted_decimal_identifier": "33550047350158956.830370654803544.261488836061796",
+      "cache_key": "reattach-to-user-namespace-0.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/reattach-to-user-namespace/versions/0.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/reattach-to-user-namespace/versions/0.2.0/download",
+        "version": "0.2.0"
       }
     },
     "seven_zip": {
@@ -103,14 +125,14 @@
       }
     },
     "windows": {
-      "version": "3.0.2",
-      "identifier": "6baf90fab963fcb0668da7240f56e0e5f98a4828",
-      "dotted_decimal_identifier": "30310859724645372.49652354481655638.247278338721832",
-      "cache_key": "windows-3.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.2/download",
+      "version": "3.0.4",
+      "identifier": "0f5d6b5234df5ffc5e9f159af219ce127f840962",
+      "dotted_decimal_identifier": "4324840172740447.71035731486372377.226578844092770",
+      "cache_key": "windows-3.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.4/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.2/download",
-        "version": "3.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.4/download",
+        "version": "3.0.4"
       }
     },
     "cron": {
@@ -147,14 +169,14 @@
       }
     },
     "ohai": {
-      "version": "5.0.0",
-      "identifier": "2fa0ad2a12f41737ec5f550fd7d758da25d76c7b",
-      "dotted_decimal_identifier": "13405989501072407.15741017912235991.97693960989819",
-      "cache_key": "ohai-5.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.0/download",
+      "version": "5.0.2",
+      "identifier": "047a7a917d1050dddb41b9c72f9adae6784b09a3",
+      "dotted_decimal_identifier": "1260566752333904.62447045189250970.240683395516835",
+      "cache_key": "ohai-5.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.2/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.0/download",
-        "version": "5.0.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.2/download",
+        "version": "5.0.2"
       }
     }
   },
@@ -176,7 +198,7 @@
       ],
       [
         "chef-client",
-        "= 7.2.0"
+        "= 7.2.1"
       ],
       [
         "mac_os_x",
@@ -187,8 +209,16 @@
         "= 3.0.0"
       ],
       [
+        "mac-app-store",
+        "= 3.0.0"
+      ],
+      [
         "dmg",
         "= 3.1.0"
+      ],
+      [
+        "reattach-to-user-namespace",
+        "= 0.2.0"
       ],
       [
         "seven_zip",
@@ -200,7 +230,7 @@
       ],
       [
         "windows",
-        "= 3.0.2"
+        "= 3.0.4"
       ],
       [
         "cron",
@@ -216,7 +246,7 @@
       ],
       [
         "ohai",
-        "= 5.0.0"
+        "= 5.0.2"
       ]
     ],
     "dependencies": {
@@ -230,7 +260,7 @@
           ">= 1.1.0"
         ]
       ],
-      "chef-client (7.2.0)": [
+      "chef-client (7.2.1)": [
         [
           "cron",
           ">= 1.7.0"
@@ -250,8 +280,24 @@
       "homebrew (3.0.0)": [
 
       ],
+      "mac-app-store (3.0.0)": [
+        [
+          "homebrew",
+          "< 4.0.0"
+        ],
+        [
+          "reattach-to-user-namespace",
+          "~> 0.2"
+        ]
+      ],
       "dmg (3.1.0)": [
 
+      ],
+      "reattach-to-user-namespace (0.2.0)": [
+        [
+          "homebrew",
+          "< 4.0.0"
+        ]
       ],
       "seven_zip (2.0.2)": [
         [
@@ -265,7 +311,7 @@
           ">= 0.0.0"
         ]
       ],
-      "windows (3.0.2)": [
+      "windows (3.0.4)": [
         [
           "ohai",
           ">= 4.0.0"
@@ -286,7 +332,7 @@
       "compat_resource (12.16.3)": [
 
       ],
-      "ohai (5.0.0)": [
+      "ohai (5.0.2)": [
 
       ],
       "my-dev-machine (0.0.1)": [
@@ -304,6 +350,10 @@
         ],
         [
           "homebrew",
+          "~> 3.0"
+        ],
+        [
+          "mac-app-store",
           "~> 3.0"
         ],
         [

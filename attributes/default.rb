@@ -30,6 +30,11 @@ default['mac_app_store'].tap do |m|
   di = Chef::EncryptedDataBagItem.load('dev', 'mac_app_store')
   m['username'] = di['username']
   m['password'] = di['password']
-  m['mas']['system_user'] = di['system_user']
-  m['mas']['use_rtun'] = true
+  # m['mas']['use_rtun'] = true
+  m['apps']['Tweetbot for Twitter'] = true
+  m['apps']['1Password - Password Manager and Secure Wallet'] = true
+  m['apps']['LastPass: Password Manager and Secure Vault'] = true
+  m['apps']['Slack'] = true
+  m['apps']['Spark - Love your email again'] = true
+  m['apps']['Divvy - Window Manager'] = true
 end
