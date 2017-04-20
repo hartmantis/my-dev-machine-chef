@@ -232,6 +232,8 @@ link File.join(dir, 'Configurations') do
   )
 end
 
+include_recipe 'vagrant::install_plugins'
+
 # include_recipe 'dropbox'
 # include_recipe 'box-sync'
 # include_recipe 'gimp'

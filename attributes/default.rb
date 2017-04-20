@@ -39,3 +39,5 @@ default['mac_app_store'].tap do |m|
   m['apps']['Divvy - Window Manager'] = true
   m['apps']['Fantastical 2 - Calendar and Reminders'] = true
 end
+
+default['vagrant']['plugins'] = %w[vagrant-winrm]
