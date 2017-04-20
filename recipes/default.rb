@@ -172,6 +172,7 @@ end
 
 homebrew_package 'tig'
 homebrew_package 'packer'
+homebrew_package 'heroku'
 
 ##################
 # App Store Apps #
