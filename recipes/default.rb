@@ -206,6 +206,7 @@ end
   docker
   virtualbox
   google-chrome
+  firefox
 ).each do |c|
   homebrew_cask c
 end
