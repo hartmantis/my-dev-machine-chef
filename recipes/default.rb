@@ -173,6 +173,7 @@ end
 homebrew_package 'tig'
 homebrew_package 'packer'
 homebrew_package 'heroku'
+homebrew_package 'libmagic'
 
 ##################
 # App Store Apps #
